@@ -1,3 +1,11 @@
+---
+
+author:MesonoxianYao
+title:example.md
+datetime:2024.12.11 22:14
+
+---
+
 ### BWAPI基础框架
 
 下面提供了一个BWAPI的机器人的框架,其通过编译.dll来作用.
