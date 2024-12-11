@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /search/
-Disallow: /namespacemembers*.html
-Disallow: /functions*.html
