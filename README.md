@@ -1,105 +1,79 @@
-# The Brood War API {#BWAPI}
 
-[![Build status](https://ci.appveyor.com/api/projects/status/6eikd5g49co6l5ty/branch/develop?svg=true)](https://ci.appveyor.com/project/heinermann/bwapi/branch/develop)
+# HEUCraftHLA
 
-[TOC]
+---
 
-# Project Information {#project}
+### 项目简介
 
-## Overview {#overview}
+---
 
-The Brood War Application Programming Interface (BWAPI) is a free and open source C++ framework that is
-used to interact with the popular Real Time Strategy (RTS) game Starcraft: Broodwar. Using BWAPI,
-students, researchers, and hobbyists can create Artificial Intelligence (AI) agents that play the game.
+这里是哈尔滨工程大学"新玖零幺"信创工作室下属项目HEUCraftHLA的仓库.
 
-BWAPI only reveals the visible parts of the game state to AI modules by default. Information on units
-that have gone back into the fog of war is denied to the AI. This enables programmers to write competitive
-non-cheating AIs that must plan and operate under partial information conditions. BWAPI also denies
-user input by default, ensuring the user cannot take control of game units while the AI is playing.
-These defaults can be changed for flexibility, unless enforced by a Tournament Module (game referee for
-AI tournaments). Changed defaults will be advertised when the match begins.
+本项目围绕RTS游戏平台StarCraft1.16,通过BWAPI进行交互,通过搭建通信与控制中间层实现类HLA架构智能博弈仿真平台的搭建.
 
+该仓库已经包含了BWAPI的主要内容,该内容处于/BWAPI-main/目录下.你也可以通过访问https://github.com/bwapi/bwapi来获取相关的信息.
 
-## Capabilities {#capability}
+---
 
- - Write competitive AIs for Starcraft: Broodwar by controlling individual units.
- - Read all relevant aspects of the game state.
- - Analyze replays frame-by-frame, and extract trends, build orders, and common strategies.
- - Get comprehensive information on the unit types, upgrades, technologies, weapons, and more.
- - Study and research real-time AI algorithms in a robust commercial RTS environment.
+### 项目功能
 
- 
-## Getting Started {#getting-started}
- - Developing a bot in C++? Then download the [latest release](https://github.com/bwapi/bwapi/releases).
- - If you would like to develop a bot in Java, please follow [this tutorial](http://sscaitournament.com/index.php?action=tutorial).
- - Want to help improve BWAPI? Fork the [`develop` branch](https://github.com/bwapi/bwapi/tree/develop).
+- 实现一个基于StarCraft1.16的智能博弈仿真平台
+- 设计间于BWAPI与客户代码的类HLA控制与通信中间层
+- 通过该平台进行一些深度强化学习算法、启发式算法实现
+- 为下一步的工作提供更多可能
 
-## Quick Start {#quick-start}
-1. Installation
-   1. Install **Visual Studio 2017**
-   2. Install **StarCraft: Brood War**
-   3. Update **StarCraft: Brood War** to `1.16.1`
-   4. Install **BWAPI**
-2. Compile
-   1. Open `ExampleProjects.sln` in the BWAPI install directory
-   2. Build the ExampleAIModule project in RELEASE mode
-   3. Copy `ExampleAIModule.dll` to `bwapi-data/AI` inside the StarCraft install folder
-3. Run StarCraft through Chaoslauncher
-   1. Run `Chaoslauncher.exe` as administrator
-      - Chaoslauncher is found in Chaoslauncher directory of BWAPI install directory
-   3. Check the *BWAPI Injector x.x.x [RELEASE]*
-   4. Click Start
-      - Make sure the version is set to Starcraft 1.16.1, not ICCup 1.16.1
-4. Run a game against Blizzard's AI
-   1. Go to **Single Player** -> **Expansion**
-   2. Select any user and click **OK**
-   3. Click **Play Custom**, select a map, and start a game
-5. Run a game against yourself
-   1. Run `Chaoslauncher - MultiInstance.exe` as administrator
-   2. Start
-      1. Go to **Multiplayer** -> **Expansion** -> **Local PC**
-      2. Select any user and click **OK**
-      3. Click **Create Game**, select a map, and click **OK**
-   3. Start -- Uncheck *BWAPI Injector x.x.x [RELEASE]* to let a human play, leave alone to make AI play itself
-      1. Go to **Multiplayer** -> **Expansion** -> **Local PC**
-      2. Select any user and click **OK**
-      3. Join the existing game created by the other client
- 
-## Important Links & Contact Information {#contact}
-* **Documentation:**         http://bwapi.github.io/
-* **Repository:**            https://github.com/bwapi/bwapi
-* **Issue Tracker:**         https://github.com/bwapi/bwapi/issues
-* **Releases:**              https://github.com/bwapi/bwapi/releases
-* **SSCAIT Discord:**        https://discord.gg/DqvHsq9
-* **IRC Channel:**           http://webchat.freenode.net/?channels=BWAPI
-* **Facebook:**              https://www.facebook.com/groups/bwapi/
-* **Links to competitions, bots, etc. :**    https://github.com/bwapi/bwapi/wiki/Useful-Links
+---
 
+### 入门
 
-## Competitions {#competition}
-Various venues host remote competitive AI competitions that allow developers from around the world to participate. These venues are often held annually and will sometimes offer prizes to the winners. It is also a great way to test your bot's capabilities.
-* [AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (AIIDE)](http://www.starcraftaicompetition.com)
-* [IEEE Conference on Games (CoG)](http://cilab.gist.ac.kr/sc_competition/)
-* [Student StarCraft AI (SSCAI) Tournament](http://sscaitournament.com/)
-* [BWAPI Bots Ladder](http://bots-stats.krasi0.com)
+---
 
+- 在了解本项目前,你最好对于StarCraft1.16有足够的了解
+- 关于BWAPI的文档,我们重构并将其翻译为中文,位于/docs/目录下
+- 在实践中我们引用/复现的文献,我们将其放在/refs/目录下
+- 如果你需要BWAPI相关支持,请自行处理/BWAPI-main/目录下的内容
 
-## Issues {#issues}
-You may experience issues when working with BWAPI. Here are some steps you may want to follow in order to resolve them.
-1. Check the log files found in `Starcraft/Errors/`.
-2. Ask in the IRC channel if anyone has experienced your issue before.
-3. Check the Issue Tracker to see if your issue has already been reported.
-4. Submit an issue to the Issue Tracker. Some pieces of information to consider submitting are
-  * Log files
-  * Screenshots
-  * Version or revision number
-  * Operating System
-  * **Steps to reproduce the problem**
+---
 
-[Go to the Issue tracker](https://github.com/bwapi/bwapi/issues)
+### 重要链接和联系信息
 
+---
 
-## Legal {#legal}
-[Starcraft](http://www.blizzard.com/games/sc/) and [Starcraft: Broodwar](http://www.blizzard.com/games/sc/) are trademarks of
-[Blizzard Entertainment](http://www.blizzard.com). BWAPI is a third party "hack" that violates the End User License Agreement (EULA).
-It is strongly recommended to purchase a legitimate copy of Starcraft: Broodwar from Blizzard Entertainment before using BWAPI.
+#### SC AI相关的一些资料:
+
+- BWAPI:https://github.com/bwapi/bwapi/wiki
+- BWAPI doc:https://bwapi.github.io/index.html
+- BWAPI wiki:https://github.com/bwapi/bwapi/wiki
+- StarcraftAI:https://www.starcraftai.com/wiki/Main_Page
+
+#### HLA相关的一些资料:
+
+- DoDAF:https://dodcio.defense.gov/library/dod-architecture-framework/
+- UAF:https://www.omg.org/spec/UAF/
+- HLA:https://standards.ieee.org/ieee/1516/3744/
+- NAF:https://www.nato.int/cps/en/natohq/topics_157575.htm
+
+#### 联系信息:
+
+- 工作室地址:中华人民共和国黑龙江省哈尔滨市南岗区南通大街145号21号楼0015室
+- 工作室联系邮箱: mesonoxian@hrbeu.edu.cn
+
+---
+
+### 法律相关:
+
+---
+
+Starcraft和Starcraft: Broodwar是 暴雪娱乐的商标。BWAPI 是违反最终用户许可协议 (EULA) 的第三方“黑客”。强烈建议在使用 BWAPI 之前从暴雪娱乐购买正版 Starcraft: Broodwar。
+
+HEUCraftHLA是基于BWAPI基础上进行相关开发的开源项目,本项目不涉及任何商业用途,本项目及非动态链接库形式关联的衍生项目需要遵循LGPL-3.0协议.详见:https://www.gnu.org/licenses/lgpl-3.0.en.html.
+
+---
+
+**Author:** MesonoxianYao
+
+**Title:** README.md
+
+**DateTime:** 2024.12.12 16:14
+
+---
