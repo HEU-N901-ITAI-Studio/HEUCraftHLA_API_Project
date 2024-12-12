@@ -11,7 +11,7 @@
 
 本项目围绕RTS游戏平台StarCraft1.16,通过BWAPI进行交互,通过搭建通信与控制中间层实现类HLA架构智能博弈仿真平台的搭建.
 
-该仓库已经包含了BWAPI的主要内容,该内容处于/BWAPI-main/目录下.你也可以通过访问https://github.com/bwapi/bwapi来获取相关的信息.
+该仓库已经包含了BWAPI的主要内容,该内容处于/BWAPI-main/目录下.你也可以通过访问https://github.com/bwapi/bwapi 来获取相关的信息.
 
 ---
 
