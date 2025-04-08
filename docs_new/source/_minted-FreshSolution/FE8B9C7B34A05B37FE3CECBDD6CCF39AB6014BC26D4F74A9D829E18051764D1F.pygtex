@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{esc}{\ref{构造&析构函数}}
+\PYG{n}{Color}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{red}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{green}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{blue}\PYG{p}{)}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{blue}\PYG{+w}{ }\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{green}\PYG{+w}{ }\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{red}\PYG{+w}{ }\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}
+\end{Verbatim}

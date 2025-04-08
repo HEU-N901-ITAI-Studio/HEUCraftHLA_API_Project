@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Broodwar}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{self}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// 确保玩家存在}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Unitset}\PYG{+w}{ }\PYG{n}{myUnits}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Broodwar}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{self}\PYG{p}{(}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{getUnits}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c+c1}{// 获取玩家的所有单位}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{u}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{myUnits}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// 遍历玩家的所有单位}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{u}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{getType}\PYG{p}{(}\PYG{p}{)}\PYG{p}{.}\PYG{n}{isRefinery}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// 检查该单位是否是精炼厂}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{nWorkersAssigned}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{u}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{getClientInfo}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{err}{\PYGZsq{}}\PYG{n}{work}\PYG{err}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c+c1}{// 获取分配给该精炼厂的工人数量}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{nWorkersAssigned}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// 如果分配的工人少于3个}
+\PYG{+w}{            }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{pClosestIdleWorker}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{u}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{getClosestUnit}\PYG{p}{(}\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Filter}\PYG{o}{:}\PYG{o}{:}\PYG{n}{IsWorker}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Filter}\PYG{o}{:}\PYG{o}{:}\PYG{n}{IsIdle}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c+c1}{// 找到最近的空闲工人单位}
+\PYG{+w}{                }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{pClosestIdleWorker}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// 如果找到空闲工人}
+\PYG{+w}{                }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{c+c1}{// 让工人单位采集瓦斯，并检查是否成功}
+\PYG{+w}{                    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{pClosestIdleWorker}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{gather}\PYG{p}{(}\PYG{n}{u}\PYG{p}{)}\PYG{p}{)}
+\PYG{+w}{                    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                        }\PYG{c+c1}{// 设置反向引用，以便在单位被杀死或重新分配时使用（代码未提供）}
+\PYG{+w}{                        }\PYG{n}{pClosestIdleWorker}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{setClientInfo}\PYG{p}{(}\PYG{n}{u}\PYG{p}{,}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{ref}\PYG{err}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{c+c1}{// 增加分配给该精炼厂的工人数量}
+\PYG{+w}{                        }\PYG{o}{+}\PYG{o}{+}\PYG{n}{nWorkersAssigned}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{n}{u}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}}\PYG{n}{setClientInfo}\PYG{p}{(}\PYG{n}{nWorkersAssigned}\PYG{p}{,}\PYG{+w}{ }\PYG{err}{\PYGZsq{}}\PYG{n}{work}\PYG{err}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{AIModule}\PYG{o}{::}\PYG{n}{onUnitCreate}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\end{Verbatim}

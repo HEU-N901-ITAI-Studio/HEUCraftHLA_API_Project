@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getID}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\end{Verbatim}

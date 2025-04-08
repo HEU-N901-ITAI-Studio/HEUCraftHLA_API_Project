@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{AIModule}\PYG{p}{(}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onEnd}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{isWinner}\PYG{p}{)}\PYG{esc}{hy\ref{onEnd()}}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onFrame}\PYG{+w}{ }\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{esc}{\ref{onFrame()}}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onNukeDetect}\PYG{p}{(}\PYG{n}{Position}\PYG{+w}{ }\PYG{n}{target}\PYG{p}{)}\PYG{esc}{\ref{onNukeDetect()}}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onPlayerLeft}\PYG{p}{(}\PYG{n}{Player}\PYG{+w}{ }\PYG{n}{player}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onReceiveText}\PYG{p}{(}\PYG{n}{Player}\PYG{+w}{ }\PYG{n}{player}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{text}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onSaveGame}\PYG{p}{(}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{gameName}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onSendText}\PYG{p}{(}\PYG{n}{std}\PYG{o}{:}\PYG{o}{:}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{text}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onStart}\PYG{p}{(}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitComplete}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitCreate}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitDestroy}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitDiscover}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitEvade}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitHide}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitMorph}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitRenegade}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{onUnitShow}\PYG{p}{(}\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{unit}\PYG{p}{)}
+\end{Verbatim}

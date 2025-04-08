@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Floor\PYGZus{}Gun\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Floor\PYGZus{}Gun\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Floor\PYGZus{}Missile\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Floor\PYGZus{}Missile\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Right\PYGZus{}Wall\PYGZus{}Flame\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Right\PYGZus{}Wall\PYGZus{}Flame\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Right\PYGZus{}Wall\PYGZus{}Missile\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Right\PYGZus{}Wall\PYGZus{}Missile\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Wall\PYGZus{}Flame\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Wall\PYGZus{}Flame\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Wall\PYGZus{}Missile\PYGZus{}Trap}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Wall\PYGZus{}Missile\PYGZus{}Trap}\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

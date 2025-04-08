@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+constexpr Color (int id=0)
+Color (int red, int green, int blue)
+int blue () const
+int green () const
+int red () const
+\end{Verbatim}

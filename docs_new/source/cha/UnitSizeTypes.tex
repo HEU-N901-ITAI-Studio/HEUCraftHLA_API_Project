@@ -1,0 +1,84 @@
+\tableofcontents
+\section{UnitSizeTypes}
+\subsection{类型类}
+\subsubsection{命名空间}
+Enum
+\subsubsection{函数}
+\begin{codebox}[函数]
+const UnitSizeType::set & 	allUnitSizeTypes ()
+\end{codebox}
+\subsubsection{变量}
+\begin{codebox}[变量]
+constexpr UnitSizeType Independent {Enum::Independent}
+constexpr UnitSizeType Large {Enum::Large}
+constexpr UnitSizeType Medium {Enum::Medium}
+constexpr UnitSizeType None {Enum::None}
+constexpr UnitSizeType Small {Enum::Small}
+constexpr UnitSizeType Unknown {Enum::Unknown}
+\end{codebox}
+\subsubsection{详细描述}
+命名空间包含unit命令类型(unit command types)。
+\begin{refer}
+\begin{itemize}
+    \item UnitSizeType
+\end{itemize}
+\end{refer}
+
+\subsubsection{函数文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=allUnitSizeTypes(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+const UnitSizeType::set& BWAPI::UnitSizeTypes::allUnitSizeTypes ()
+\end{minted}
+检索所有有效的 nitSizeTypes
+\begin{return}
+\begin{itemize}
+    \item UnitSizeType::set：所有UnitSizeTypes
+\end{itemize}
+\end{return}
+被 BWAPI::UnitCommandType::UnitCommandType()   函数引用。
+\end{tcolorbox}
+
+\subsubsection{变量文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Independent(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitSizeTypes::Independent {Enum::Independent}
+\end{minted}
+独立 \par
+与   UnitSizeTypes::Enum::Independent   对应
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Large(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitSizeTypes::Large {Enum::Large}
+\end{minted}
+大型 \par
+与   UnitSizeTypes::Enum::Large   对应
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Medium(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitSizeTypes::Medium {Enum::Medium}
+\end{minted}
+中型 \par
+与   UnitSizeTypes::Enum::Medium   对应
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=None(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitSizeType BWAPI::UnitSizeTypes::None {Enum::None}
+\end{minted}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Small(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitSizeTypes::Small {Enum::Small}
+\end{minted}
+中型 \par
+与   UnitSizeTypes::Enum::Small   对应
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unknown(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitSizeType BWAPI::UnitSizeTypes::Unknown {Enum::Unknown}
+\end{minted}
+\end{tcolorbox}

@@ -1,0 +1,6 @@
+constexpr UnitType Special_Cargo_Ship {Enum::Special_Cargo_Ship}
+constexpr UnitType Special_Floor_Hatch {Enum::Special_Floor_Hatch}
+constexpr UnitType Special_Independant_Starport {Enum::Special_Independant_Starport}
+constexpr UnitType Special_Map_Revealer {Enum::Special_Map_Revealer}
+constexpr UnitType Special_Mercenary_Gunship {Enum::Special_Mercenary_Gunship}
+constexpr UnitType Special_Start_Location {Enum::Special_Start_Location}

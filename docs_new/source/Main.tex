@@ -1,0 +1,52 @@
+\documentclass[10pt,seperate,ans]{FreshSolution}
+\usepackage{minted}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, minted}
+\renewcommand{\familydefault}{\ttdefault}
+\setmonofont{Consolas}
+\setminted{
+    linenos,
+    fontsize=\footnotesize,
+    frame=single,
+    framesep=2mm,
+    numbersep=5pt,
+    xleftmargin=10pt,
+    breaklines=true,
+    tabsize=4,
+    showspaces=false,
+    showtabs=false,
+}
+\newtcblisting{codebox}[1][代码]{
+  listing engine=minted,         % 使用 minted 引擎
+  minted language=cpp,           % 默认语言为 cpp，可通过参数指定
+  minted options={               % minted 的高亮选项
+    fontsize=\small,
+    linenos,                     % 显示行号
+    breaklines,                  % 自动换行
+    autogobble,                  % 自动去除代码缩进
+    escapeinside=||,
+    bgcolor=white,
+    frame=none
+  },
+  colback=white,          % 背景颜色
+  colframe=black!60!white,        % 边框颜色
+  listing only,                  % 只显示代码，不显示输出
+  arc=0mm,
+  title=#1,                % 标题
+}
+
+
+
+\begin{document}
+\begin{spacing}{1.75}
+% \input{cha/AIModule.tex}
+% \input{cha/Bulletinterface.tex}
+% \input{cha/UnitType.tex}
+% \input{cha/UnitCommandTypes.tex}
+% \input{cha/UnitSizeTypes.tex}
+\input{cha/UnitTypes.tex}
+
+\end{spacing}
+\end{document}

@@ -1,0 +1,6 @@
+constexpr UnitSizeType Independent {Enum::Independent}
+constexpr UnitSizeType Large {Enum::Large}
+constexpr UnitSizeType Medium {Enum::Medium}
+constexpr UnitSizeType None {Enum::None}
+constexpr UnitSizeType Small {Enum::Small}
+constexpr UnitSizeType Unknown {Enum::Unknown}

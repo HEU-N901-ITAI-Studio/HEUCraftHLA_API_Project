@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{Game}\PYG{o}{::}\PYG{n}{vDrawText}\PYG{p}{(}\PYG{n}{CoordinateType}\PYG{o}{::}\PYG{n}{Enum}\PYG{+w}{ }\PYG{n}{ctype}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{format}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{va\PYGZus{}list}\PYG{+w}{ }\PYG{n}{arg}\PYG{p}{)}
+\end{Verbatim}

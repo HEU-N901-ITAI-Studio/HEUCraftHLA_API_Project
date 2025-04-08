@@ -1,0 +1,197 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n+nf}{BWAPI::BulletInterface::exists}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{tcolorbox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{检查Bullet是否存在于BWAPI}\PYG{+w}{ }\PYG{n}{player的视野中}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{k+kt}{bool}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{子弹存在或可见}\PYG{p}{(}\PYG{n+nb}{true}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{已被销毁或超出作用范围}\PYG{p}{(}\PYG{n+nb}{false}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{n}{如果禁用了}\PYG{+w}{  }\PYG{n}{Flag}\PYG{o}{::}\PYG{n}{CompleteMapInformation}\PYG{+w}{  }\PYG{err}{，}\PYG{n}{并且一个}\PYG{+w}{  }\PYG{n}{Bullet}\PYG{+w}{  }\PYG{n}{不可见}\PYG{err}{，}\PYG{n}{那么无论该bullet是否真实存在}\PYG{err}{，}\PYG{n}{返回值都将为}\PYG{+w}{  }\PYG{n+nb}{false}\PYG{+w}{  }\PYG{err}{。}\PYG{n}{这是因为对于不可见的敌方bullet}\PYG{err}{，}\PYG{n}{AI无法获取任何状态信息}\PYG{err}{。\PYGZbs{}}\PYG{n}{par}
+\PYG{n}{如果启用了}\PYG{+w}{  }\PYG{n}{Flag}\PYG{o}{::}\PYG{n}{CompleteMapInformation}\PYG{+w}{  }\PYG{err}{，}\PYG{n}{那么这个函数对于所有}\PYG{+w}{  }\PYG{n}{Bullet}\PYG{+w}{  }\PYG{n}{信息都是准确的}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{isVisible}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{UnitInterface}\PYG{o}{::}\PYG{n}{exists}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getPlayer}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Player}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getPlayer}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取拥有该Bullet的Player接口对象}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{Player}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{拥有该Bullet的Player接口对象}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{无法访问该Bullet的Player对象}\PYG{p}{(}\PYG{k}{nullptr}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getType}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{BulletType}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getType}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取当前Bullet的type}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{BulletType}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{Bullet类型}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{n}{BulletTypes}\PYG{o}{::}\PYG{n}{Unknown}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getSource}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getSource}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取发射这颗Bullet的Unit接口对象}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{Unit}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{拥有该Bullet的Unit接口对象}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{无法识别或访问发射源}\PYG{p}{(}\PYG{k}{nullptr}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTarget}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getPosition}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Position}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getPosition}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的当前position}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{Positions}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{子弹当前的position}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{子弹无法访问}\PYG{p}{(}\PYG{n}{Positions}\PYG{o}{::}\PYG{n}{Unknown}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTargetPosition}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getAngle}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getAngle}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的朝向方向}\PYG{err}{。\PYGZbs{}}\PYG{n}{par}
+\PYG{n}{如果angle为0}\PYG{err}{，}\PYG{n}{则Bullet朝向为right}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{err}{：}\PYG{n}{Bullet的angle}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{l+m+mf}{0.0}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTargetPosition}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getVelocityX}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getVelocityX}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet在X轴方向上的Velocity分量}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{err}{：}\PYG{n}{Bullet每frame在X轴方向上移动的pixel数}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{l+m+mf}{0.0}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getVelocityY}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getAngle}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getVelocityY}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getVelocityY}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet在Y轴方向上的Velocity分量}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{err}{：}\PYG{n}{表示Bullet每frame在Y轴方向上移动的pixel数}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{l+m+mf}{0.0}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getVelocityX}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getAngle}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getTarget}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Unit}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getTarget}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的目标Unit接口对象}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{Unit}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{存在目标Unit}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet目标Unit无法访问}\PYG{err}{，}\PYG{n}{或者Bullet的目标是ground}\PYG{err}{，}\PYG{n}{或者Bullet本身无法访问}\PYG{p}{(}\PYG{k}{nullptr}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTargetPosition}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getSource}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getTargetPosition}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Position}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getTargetPosition}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的目标position}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{Positions}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{Bullet的飞行目标position}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{n}{Positions}\PYG{o}{::}\PYG{n}{Unknown}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTarget}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getPosition}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{getRemoveTimer}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{getRemoveTimer}\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的剩余寿命}\PYG{err}{。\PYGZbs{}}\PYG{n}{par}
+\PYG{n}{Bullet不是永久对象}\PYG{err}{，}\PYG{n}{因此它们通常有一个有限的寿命}\PYG{err}{。}\PYG{n}{这个寿命以frame为单位测量}\PYG{err}{。}\PYG{n}{通常情况下}\PYG{err}{，}\PYG{n}{Bullet会在被移除之前到达其target}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{err}{：}\PYG{n}{Bullet自毁前剩余的frame数}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{Bullet无法访问}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getTarget}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{n}{getPosition}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{refer}\PYG{p}{\PYGZcb{}}
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}[}\PYG{n}{isVisible}\PYG{p}{()]}
+\PYG{+w}{    }\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{BulletInterface}\PYG{o}{::}\PYG{n}{isVisible}\PYG{p}{(}\PYG{n}{Player}\PYG{+w}{ }\PYG{n}{player}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{nullptr}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{codebox}\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{获取Bullet的可见性状态}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{parameter}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{err}{：}\PYG{n}{Bullet自毁前剩余的frame数}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{n}{player}\PYG{p}{\PYGZcb{}(}\PYG{n}{可选}\PYG{p}{)}\PYG{err}{：}\PYG{n}{如果指定了这个参数}\PYG{err}{，}\PYG{n}{则检查该player是否能看到这颗bullet}\PYG{err}{。}\PYG{n}{如果未指定此参数}\PYG{err}{，}\PYG{n}{则使用默认值}\PYG{+w}{   }\PYG{k}{nullptr}\PYG{+w}{  }\PYG{err}{，}\PYG{n}{此时会检查}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{+w}{ }\PYG{n}{player是否能看到这颗bullet}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{parameter}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{note}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{n}{如果player是nullptr}\PYG{err}{，}\PYG{n}{并且Broodwar}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{self}\PYG{p}{()}\PYG{n}{也是nullptr}\PYG{err}{，}\PYG{n}{则通过检查是否有其他player能看到这颗bullet来确定其可见性}\PYG{err}{。}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{note}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{begin}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{err}{\PYGZbs{}}\PYG{n}{item}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n}{texttt}\PYG{p}{\PYGZob{}}\PYG{k+kt}{bool}\PYG{p}{\PYGZcb{}}\PYG{err}{：}\PYG{n}{指定player可以看到这颗bullet}\PYG{p}{(}\PYG{n+nb}{true}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{指定player看不到这颗bullet}\PYG{p}{(}\PYG{n+nb}{false}\PYG{p}{)}
+\PYG{+w}{    }\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{n}{itemize}\PYG{p}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{end}\PYG{p}{\PYGZob{}}\PYG{k}{return}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

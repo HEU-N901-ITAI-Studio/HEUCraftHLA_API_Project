@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{void BWAPI::Game::drawBoxMap (Position leftTop, Position rightBottom, Color color, bool isSolid = false )}
+\end{Verbatim}

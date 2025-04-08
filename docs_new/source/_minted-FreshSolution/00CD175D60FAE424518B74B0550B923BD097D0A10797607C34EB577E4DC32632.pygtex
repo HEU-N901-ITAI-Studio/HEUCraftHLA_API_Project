@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{    constexpr Color (int id=0)}
+\PYG{x}{    Color (int red, int green, int blue)}
+\PYG{x}{    int blue () const}
+\PYG{x}{    int green () const}
+\PYG{x}{    int red () const}
+\end{Verbatim}

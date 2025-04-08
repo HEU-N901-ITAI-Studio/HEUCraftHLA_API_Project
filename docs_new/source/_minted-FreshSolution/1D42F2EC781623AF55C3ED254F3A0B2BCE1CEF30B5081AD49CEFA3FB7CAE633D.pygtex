@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+virtual BulletType BWAPI::BulletInterface::getType() const
+\end{Verbatim}

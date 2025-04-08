@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{void BWAPI::Game::drawTextMap (int x, int y, const char * format,  ... )}
+\end{Verbatim}

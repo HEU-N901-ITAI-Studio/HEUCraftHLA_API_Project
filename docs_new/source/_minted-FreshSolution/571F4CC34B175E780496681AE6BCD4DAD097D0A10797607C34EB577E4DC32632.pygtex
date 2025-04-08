@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{void ExampleAIModule::onStart()}
+\PYG{x}{\PYGZob{} // Make our bot run thousands of games as fast as possible!}
+\PYG{x}{    Broodwar\PYGZhy{}\PYGZgt{}setLocalSpeed(0);}
+\PYG{x}{    Broodwar\PYGZhy{}\PYGZgt{}setGUI(false);}
+\PYG{x}{\PYGZcb{}}
+\end{Verbatim}

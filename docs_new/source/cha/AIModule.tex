@@ -1,0 +1,298 @@
+\tableofcontents
+\section{AIModule}
+\subsection{接口类}
+\begin{codebox}[公共成员函数]
+AIModule()
+virtual void onEnd (bool isWinner)
+virtual void onFrame ()
+virtual void onNukeDetect(Position target)
+virtual void onPlayerLeft(Player player)
+virtual void onReceiveText(Player player, std::string text)
+virtual void onSaveGame(std::string gameName)
+virtual void onSendText(std::string text)
+virtual void onStart()
+virtual void onUnitComplete(Unit unit)
+virtual void onUnitCreate(Unit unit)
+virtual void onUnitDestroy(Unit unit)
+virtual void onUnitDiscover(Unit unit)
+virtual void onUnitEvade(Unit unit)
+virtual void onUnitHide(Unit unit)
+virtual void onUnitMorph(Unit unit)
+virtual void onUnitRenegade(Unit unit)
+virtual void onUnitShow(Unit unit)
+\end{codebox}
+
+\subsubsection{详细描述}
+AIModule是一个虚拟类，旨在由自定义AI类实现或继承。
+
+如果BWAPI调用了任何这些预定义的接口功能，则保证初始化Broodwar接口
+
+\begin{warning}
+    在调用这些函数的线程以外的任何线程中使用BWAPI都会产生意外行为，并可能崩溃您的Bot。只要所有BWAPI交互都仅限于调用线程，多线程AI是有可能实现的。
+    
+\end{warning}
+
+\begin{note}
+    replay被认为是game，并调用与标准game相同的所有callbacks。
+\end{note}
+\subsubsection{构造函数和析构函数文档}
+\begin{codebox}[构造函数\&析构函数]
+    BWAPI::AIModule::AIModule ()
+\end{codebox}
+\subsubsection{成员函数文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onStart(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onStart()
+    \end{minted}
+    此函数仅在游戏开始时调用一次。  
+    它旨在让 AI 模块在此函数中进行任何数据初始化。
+    \begin{warning}
+        在调用此函数之前使用 Broodwar 接口可能会导致未定义行为，并使你的 AIbot 崩溃。（例如，在类的静态初始化期间调用接口可能会导致问题。）
+    \end{warning}
+\end{tcolorbox}
+    
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onEnd(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onEnd(bool isWinner)
+\end{minted}
+只在游戏结束时被调用一次。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{isWinner}：决定当前 player 是否赢得本场比赛的 bool 变量，在获胜时值为 true，在失败或游戏是 replay 时值为 false
+    \end{itemize}
+\end{parameter}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onFrame(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onFrame()
+    \end{minted}
+    在每个逻辑帧中被调用一次。  
+    用户将大部分代码放在这个函数中。
+\end{tcolorbox}
+    
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onSendText(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onSendText(std::string text)
+\end{minted}
+在 user 尝试发送消息时被调用。  
+这个函数让 bot 能够执行 user 输入的文本指令用以 debug。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{text}：String 对象，包含 user 发送的具体文本信息
+    \end{itemize}
+\end{parameter}
+\begin{note}
+    如果 Flag::UserInput 被禁用，该函数不会被调用。
+\end{note}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onReceiveText(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onReceiveText(Player player, std::string text)
+    \end{minted}
+    在 client 接收到来自另一位 player 的消息时被调用。  
+    该函数能用于在团队游戏中从队友处检索信息，或只是为了回应其他 player。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{player}：Player 接口对象代表文本消息的所有者
+            \item \texttt{text}：player 发送的文本信息
+        \end{itemize}
+    \end{parameter}
+    \begin{note}
+        当前 player 发送的信息不会调用此函数。
+    \end{note}
+\end{tcolorbox}
+    
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onPlayerLeft(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onPlayerLeft(Player player)
+\end{minted}
+当一个 player 离开时被调用。  
+他们的所有 unit 将会自动分配给 neutral player，并保留他们的 colour 和 alliance 参数。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{player}：表示离开游戏的 player 的 Player 接口对象
+    \end{itemize}
+\end{parameter}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onNukeDetect(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onNukeDetect(Position target)
+    \end{minted}
+    当 Nuke 在地图上的某个位置启动时调用。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{target}：包含 Nuke 目标位置的 Position 对象。如果目标位置不可见且 Flag::CompleteInformation 已禁用，则目标将为 Position::Unknown
+        \end{itemize}
+    \end{parameter}
+\end{tcolorbox}
+    
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitDiscover(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitDiscover(Unit unit)
+\end{minted}
+当一个 Unit 变为可访问时调用。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 接口对象，表示刚刚变为可访问的 unit
+    \end{itemize}
+\end{parameter}
+\begin{note}
+    此函数包含 Flag::CompleteMapInformation 状态
+\end{note}
+\begin{refer}
+    \begin{itemize}
+        \item \texttt{BWAPI::AIModule::onUnitShow}
+    \end{itemize}
+\end{refer}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitEvade(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onUnitEvade(Unit unit)
+    \end{minted}
+    当一个 Unit 变为不可访问时调用。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{unit}：Unit 接口对象，表示刚刚变为不可访问的 unit
+        \end{itemize}
+    \end{parameter}
+    \begin{note}
+        此函数包含 Flag::CompleteMapInformation 状态
+    \end{note}
+    \begin{refer}
+        \begin{itemize}
+            \item \texttt{BWAPI::AIModule::onUnitHide}
+        \end{itemize}
+    \end{refer}
+\end{tcolorbox}
+    
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitShow(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitShow(Unit unit)
+\end{minted}
+当以前不可见的 Unit 变为可见时调用。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 接口对象，表示刚刚变为可见的 unit
+    \end{itemize}
+\end{parameter}
+\begin{note}
+    此函数包含 Flag::CompleteMapInformation 状态
+\end{note}
+\begin{refer}
+    \begin{itemize}
+        \item \texttt{BWAPI::AIModule::onUnitDiscover}
+    \end{itemize}
+\end{refer}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitHide(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitHide(Unit unit)
+\end{minted}
+当以前可见的 Unit 变为不可见时调用。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 接口对象，表示即将超出范围的 unit
+    \end{itemize}
+\end{parameter}
+\begin{note}
+    此函数包含 Flag::CompleteMapInformation 状态
+\end{note}
+\begin{refer}
+    \begin{itemize}
+        \item \texttt{BWAPI::AIModule::onUnitEvade}
+    \end{itemize}
+\end{refer}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitCreate(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onUnitCreate(Unit unit)
+    \end{minted}
+    在创建任何 unit 时调用。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{unit}：Unit 接口对象，表示刚刚创建的 unit
+        \end{itemize}
+    \end{parameter}
+    \begin{note}
+        由于 Broodwar 的内部机制，此函数排除了 Zerg 的变形（morphing）以及在瓦斯矿（Vespene Geyser）上建造建筑的情况。
+    \end{note}
+    \begin{refer}
+        \begin{itemize}
+            \item \texttt{BWAPI::AIModule::onUnitMorph}
+        \end{itemize}
+    \end{refer}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitDestroy(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitDestroy(Unit unit)
+\end{minted}
+当一个 unit 因死亡或其他原因从游戏中移除时被调用。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 接口对象，表示刚刚被摧毁或以其他方式完全从游戏中移除的 unit
+    \end{itemize}
+\end{parameter}
+\begin{note}
+    当一个工蜂（Drone）变形为萃取器（Extractor）时，工蜂会被从游戏中移除，而瓦斯矿（Vespene Geyser）会变形为萃取器。  
+    如果一个 unit 是可见的，并且被摧毁，那么在调用此事件之前，会先调用 \texttt{onUnitHide}。
+\end{note}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitMorph(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onUnitMorph(Unit unit)
+    \end{minted}
+    当一个 unit 的 UnitType 发生变化时被调用。  
+    例如，当一个工蜂（Drone）变形为孵化场（Hatchery）、攻城坦克（Siege Tank）进入攻城模式（Siege Mode），或者一个瓦斯矿（Vespene Geyser）被建造了精炼厂（Refinery）时。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{unit}：Unit 接口对象，表示 UnitType 的改变的 unit
+        \end{itemize}
+    \end{parameter}
+    \begin{note}
+        如果 UnitType 变为或从 \texttt{UnitTypes::Unknown} 变化，则不会触发此事件。
+    \end{note}
+\end{tcolorbox}
+    
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitRenegade(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitRenegade(Unit unit)
+\end{minted}
+当一个 unit 的所有权发生变化时被调用。  
+这种情况发生在使用神族的“心灵控制”（Mind Control）技能时，或者在“使用地图设置”（Use Map Settings）中单位的所有权发生变化时。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 接口对象，表示改变所有权的 unit
+    \end{itemize}
+\end{parameter}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onSaveGame(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+    virtual void BWAPI::AIModule::onSaveGame(std::string gameName)
+    \end{minted}
+    当 Broodwar 游戏状态被保存到文件时被调用。
+    \begin{parameter}
+        \begin{itemize}
+            \item \texttt{gameName}：包含游戏被保存为的文件名的 String 对象
+        \end{itemize}
+    \end{parameter}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=onUnitComplete(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+virtual void BWAPI::AIModule::onUnitComplete(Unit unit)
+\end{minted}
+当 unit 的状态从 'incomplete' 变为 'complete' 时被调用。
+\begin{parameter}
+    \begin{itemize}
+        \item \texttt{unit}：Unit 对象，表示刚刚完成训练或建造的 Unit
+    \end{itemize}
+\end{parameter}
+\end{tcolorbox}

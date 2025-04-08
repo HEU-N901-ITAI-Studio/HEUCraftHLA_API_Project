@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{const}\PYG{+w}{ }\PYG{n}{UnitSizeType}\PYG{o}{::}\PYG{n}{set}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{::}\PYG{n}{UnitSizeTypes}\PYG{o}{::}\PYG{n}{allUnitSizeTypes}\PYG{+w}{ }\PYG{p}{()}
+\end{Verbatim}

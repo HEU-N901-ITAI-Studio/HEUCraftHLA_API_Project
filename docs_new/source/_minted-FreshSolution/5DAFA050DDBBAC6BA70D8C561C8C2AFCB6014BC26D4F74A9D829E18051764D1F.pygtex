@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{AIModule}\PYG{o}{:}\PYG{o}{:}\PYG{n}{onEnd}\PYG{p}{(}\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{isWinner}\PYG{p}{)}\PYG{+w}{ }\PYG{esc}{\addcontentsline{toc}{subsubsection}{onEnd()}\label{111}}
+\end{Verbatim}

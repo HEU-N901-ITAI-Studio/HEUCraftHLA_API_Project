@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+if (BWAPI::Broodwar\PYGZhy{}\PYGZgt{}self()) // 确保玩家存在
+\PYG{n+nb}{\PYGZob{}}
+    BWAPI::Unitset myUnits = BWAPI::Broodwar\PYGZhy{}\PYGZgt{}self()\PYGZhy{}\PYGZgt{}getUnits(); // 获取玩家的所有单位
+    for (auto u : myUnits) // 遍历玩家的所有单位
+    \PYG{n+nb}{\PYGZob{}}
+        if (u\PYGZhy{}\PYGZgt{}getType().isRefinery()) // 检查该单位是否是精炼厂
+        \PYG{n+nb}{\PYGZob{}}
+            int nWorkersAssigned = u\PYGZhy{}\PYGZgt{}getClientInfo\PYGZlt{}int\PYGZgt{}(\PYGZsq{}work\PYGZsq{}); // 获取分配给该精炼厂的工人数量
+            if (nWorkersAssigned \PYGZlt{} 3) // 如果分配的工人少于3个
+            \PYG{n+nb}{\PYGZob{}}
+                BWAPI::Unit pClosestIdleWorker = u\PYGZhy{}\PYGZgt{}getClosestUnit(BWAPI::Filter::IsWorker \PYG{n+nb}{\PYGZam{}\PYGZam{}} BWAPI::Filter::IsIdle); // 找到最近的空闲工人单位
+                if (pClosestIdleWorker) // 如果找到空闲工人
+                \PYG{n+nb}{\PYGZob{}}
+                    // 让工人单位采集瓦斯，并检查是否成功
+                    if (pClosestIdleWorker\PYGZhy{}\PYGZgt{}gather(u))
+                    \PYG{n+nb}{\PYGZob{}}
+                        // 设置反向引用，以便在单位被杀死或重新分配时使用（代码未提供）
+                        pClosestIdleWorker\PYGZhy{}\PYGZgt{}setClientInfo(u, \PYGZsq{}ref\PYGZsq{});
+                        // 增加分配给该精炼厂的工人数量
+                        ++nWorkersAssigned;
+                        u\PYGZhy{}\PYGZgt{}setClientInfo(nWorkersAssigned, \PYGZsq{}work\PYGZsq{});
+                    \PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

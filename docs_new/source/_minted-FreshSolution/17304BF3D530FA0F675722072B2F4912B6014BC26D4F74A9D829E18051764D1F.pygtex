@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{virtual}\PYG{+w}{ }\PYG{n}{Player}\PYG{+w}{ }\PYG{n}{BWAPI}\PYG{o}{:}\PYG{o}{:}\PYG{n}{BulletInterface}\PYG{o}{:}\PYG{o}{:}\PYG{n}{getPlayer}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{const}
+\end{Verbatim}

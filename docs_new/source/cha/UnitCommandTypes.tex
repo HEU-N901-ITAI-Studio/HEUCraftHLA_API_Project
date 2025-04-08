@@ -1,0 +1,455 @@
+\tableofcontents
+\section{UnitCommandTypes}
+\subsection{类型类}
+\subsubsection{命名空间}
+Enum
+\subsubsection{函数}
+\begin{codebox}[函数]
+const UnitCommandType::set & allUnitCommandTypes ()
+\end{codebox}
+\subsubsection{变量}
+\begin{codebox}[变量]
+constexpr UnitCommandType Attack_Move {Enum::Attack_Move}
+constexpr UnitCommandType Attack_Unit {Enum::Attack_Unit}
+constexpr UnitCommandType Build {Enum::Build}
+constexpr UnitCommandType Build_Addon {Enum::Build_Addon}
+constexpr UnitCommandType Burrow {Enum::Burrow}
+constexpr UnitCommandType Cancel_Addon {Enum::Cancel_Addon}
+constexpr UnitCommandType Cancel_Construction {Enum::Cancel_Construction}
+constexpr UnitCommandType Cancel_Morph {Enum::Cancel_Morph}
+constexpr UnitCommandType Cancel_Research {Enum::Cancel_Research}
+constexpr UnitCommandType Cancel_Train {Enum::Cancel_Train}
+constexpr UnitCommandType Cancel_Train_Slot {Enum::Cancel_Train_Slot}
+constexpr UnitCommandType Cancel_Upgrade {Enum::Cancel_Upgrade}
+constexpr UnitCommandType Cloak {Enum::Cloak}
+\end{codebox}
+\begin{codebox}[变量]
+constexpr UnitCommandType Decloak {Enum::Decloak}
+constexpr UnitCommandType Follow {Enum::Follow}
+constexpr UnitCommandType Gather {Enum::Gather}
+constexpr UnitCommandType Halt_Construction {Enum::Halt_Construction}
+constexpr UnitCommandType Hold_Position {Enum::Hold_Position}
+constexpr UnitCommandType Land {Enum::Land}
+constexpr UnitCommandType Lift {Enum::Lift}
+constexpr UnitCommandType Load {Enum::Load}
+constexpr UnitCommandType Morph {Enum::Morph}
+constexpr UnitCommandType Move {Enum::Move}
+constexpr UnitCommandType None {Enum::None}
+constexpr UnitCommandType Patrol {Enum::Patrol}
+constexpr UnitCommandType Place_COP {Enum::Place_COP}
+constexpr UnitCommandType Repair {Enum::Repair}
+constexpr UnitCommandType Research {Enum::Research}
+constexpr UnitCommandType Return_Cargo {Enum::Return_Cargo}
+constexpr UnitCommandType Right_Click_Position {Enum::Right_Click_Position}
+constexpr UnitCommandType Right_Click_Unit {Enum::Right_Click_Unit}
+constexpr UnitCommandType Set_Rally_Position {Enum::Set_Rally_Position}
+constexpr UnitCommandType Set_Rally_Unit {Enum::Set_Rally_Unit}
+constexpr UnitCommandType Siege {Enum::Siege}
+constexpr UnitCommandType Stop {Enum::Stop}
+constexpr UnitCommandType Train {Enum::Train}
+constexpr UnitCommandType Unburrow {Enum::Unburrow}
+constexpr UnitCommandType Unknown {Enum::Unknown}
+constexpr UnitCommandType Unload {Enum::Unload}
+constexpr UnitCommandType Unload_All {Enum::Unload_All}
+constexpr UnitCommandType Unload_All_Position {Enum::Unload_All_Position}
+constexpr UnitCommandType Unsiege {Enum::Unsiege}
+constexpr UnitCommandType Upgrade {Enum::Upgrade}
+constexpr UnitCommandType Use_Tech {Enum::Use_Tech}
+constexpr UnitCommandType Use_Tech_Position {Enum::Use_Tech_Position}
+constexpr UnitCommandType Use_Tech_Unit {Enum::Use_Tech_Unit}
+\end{codebox}
+\subsubsection{详细描述}
+命名空间包含unit命令类型(unit command types)。
+\begin{refer}
+\begin{itemize}
+    \item UnitCommandType
+\end{itemize}
+\end{refer}
+\subsubsection{函数文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=allUnitCommandTypes(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+const UnitCommandType::set& BWAPI::UnitCommandTypes::allUnitCommandTypes ()
+\end{minted}
+检索所有有效的   UnitCommandType   集合。
+\begin{return}
+\begin{itemize}
+    \item UnitCommandType::set：UnitCommandType 的集合，包含所有有效的unit命令类型。
+\end{itemize}
+\end{return}
+被 BWAPI::UnitCommandType::UnitCommandType()   函数引用。
+\end{tcolorbox}
+\subsubsection{变量文档}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Attack\_Move\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Attack_Move {Enum::Attack_Move}
+\end{minted}
+攻击移动。\par 对应于   \verb|UnitCommandTypes::Enum::Attack_Move|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Attack\_Unit\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Attack_Unit {Enum::Attack_Unit}
+\end{minted}
+攻击unit。\par 对应于   \verb|UnitCommandTypes::Enum::Attack_Unit|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Build\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Build {Enum::Build}
+\end{minted}
+建造。\par 对应于   \verb|UnitCommandTypes::Enum::Build|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Build\_Addon\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Build_Addon {Enum::Build_Addon}
+\end{minted}
+建造附加建筑。\par 对应于   \verb|UnitCommandTypes::Enum::Build_Addon|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Burrow\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Burrow {Enum::Burrow}
+\end{minted}
+潜地。\par 对应于   \verb|UnitCommandTypes::Enum::Burrow|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Addon\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Addon {Enum::Cancel_Addon}
+\end{minted}
+取消附加建筑。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Addon|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Construction\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Construction {Enum::Cancel_Construction}
+\end{minted}
+取消建筑建造。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Construction|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Morph\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Morph {Enum::Cancel_Morph}
+\end{minted}
+取消变形。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Morph|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Research\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Research {Enum::Cancel_Research}
+\end{minted}
+取消研究。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Research|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Train\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Train {Enum::Cancel_Train}
+\end{minted}
+取消训练。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Train|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Train\_Slot\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Train_Slot {Enum::Cancel_Train_Slot}
+\end{minted}
+取消训练unit槽位。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Train_Slot|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cancel\_Upgrade\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cancel_Upgrade {Enum::Cancel_Upgrade}
+\end{minted}
+取消升级。\par 对应于   \verb|UnitCommandTypes::Enum::Cancel_Upgrade|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Cloak\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Cloak {Enum::Cloak}
+\end{minted}
+隐形。\par 对应于   \verb|UnitCommandTypes::Enum::Cloak|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Decloak\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Decloak {Enum::Decloak}
+\end{minted}
+取消隐形。\par 对应于   \verb|UnitCommandTypes::Enum::Decloak|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Follow\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Follow {Enum::Follow}
+\end{minted}
+跟随。\par 对应于   \verb|UnitCommandTypes::Enum::Follow|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Gather\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Gather {Enum::Gather}
+\end{minted}
+采集。\par 对应于   \verb|UnitCommandTypes::Enum::Follow|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Gather\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Gather {Enum::Gather}
+\end{minted}
+采集。\par 对应于   \verb|UnitCommandTypes::Enum::Gather|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Halt\_Construction\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Halt_Construction {Enum::Halt_Construction}
+\end{minted}
+停止建筑建造。\par 对应于   \verb|UnitCommandTypes::Enum::Halt_Construction|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hold\_Position\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Hold_Position {Enum::Hold_Position}
+\end{minted}
+保持位置。\par 对应于   \verb|UnitCommandTypes::Enum::Hold_Position|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Land\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Land {Enum::Land}
+\end{minted}
+着陆。\par 对应于   \verb|UnitCommandTypes::Enum::Land|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Lift\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Lift {Enum::Lift}
+\end{minted}
+起飞。\par 对应于   \verb|UnitCommandTypes::Enum::Lift|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Load\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Load {Enum::Load}
+\end{minted}
+装载。\par 对应于   \verb|UnitCommandTypes::Enum::Load|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Lift\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Load {Enum::Load}
+\end{minted}
+装载。\par 对应于   \verb|UnitCommandTypes::Enum::Load|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Morph\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Morph {Enum::Morph}
+\end{minted}
+变形。\par 对应于   \verb|UnitCommandTypes::Enum::Morph|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Move\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Move {Enum::Move}
+\end{minted}
+移动。\par 对应于   \verb|UnitCommandTypes::Enum::Move|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=None\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitCommandType BWAPI::UnitCommandTypes::None {Enum::None}
+\end{minted}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Patrol\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Patrol {Enum::Patrol}
+\end{minted}
+巡逻。\par 对应于   \verb|UnitCommandTypes::Enum::Patrol|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Place\_COP\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Place_COP {Enum::Place_COP}
+\end{minted}
+放置水晶光子炮（COP）。\par 对应于   \verb|UnitCommandTypes::Enum::Place_COP|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Repair\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Repair {Enum::Repair}
+\end{minted}
+修理。\par 对应于   \verb|UnitCommandTypes::Enum::Repair|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Research\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Research {Enum::Research}
+\end{minted}
+研究。\par 对应于   \verb|UnitCommandTypes::Enum::Research|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Return\_Cargo\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Return_Cargo {Enum::Return_Cargo}
+\end{minted}
+返回货物。\par 对应于   \verb|UnitCommandTypes::Enum::Return_Cargo|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Right\_Click\_Position\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Right_Click_Position {Enum::Right_Click_Position}
+\end{minted}
+右键点击位置。\par 对应于   \verb|UnitCommandTypes::Enum::Right_Click_Position|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Right\_Click\_Unit\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Right_Click_Unit {Enum::Right_Click_Unit}
+\end{minted}
+右键点击unit。\par 对应于   \verb|UnitCommandTypes::Enum::Right_Click_Unit|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Set\_Rally\_Position\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Set_Rally_Position {Enum::Set_Rally_Position}
+\end{minted}
+设置集结点。\par 对应于   \verb|UnitCommandTypes::Enum::Set_Rally_Position|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Set\_Rally\_Unit\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Set_Rally_Unit {Enum::Set_Rally_Unit}
+\end{minted}
+设置集结unit。\par 对应于   \verb|UnitCommandTypes::Enum::Set_Rally_Unit|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Stop\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Stop {Enum::Stop}
+\end{minted}
+停止。\par 对应于   \verb|UnitCommandTypes::Enum::Stop|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Train\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Train {Enum::Train}
+\end{minted}
+训练。\par 对应于   \verb|UnitCommandTypes::Enum::Train|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unburrow\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Unburrow {Enum::Unburrow}
+\end{minted}
+解除埋地。\par 对应于   \verb|UnitCommandTypes::Enum::Unburrow|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unknown\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitCommandType BWAPI::UnitCommandTypes::Unknown {Enum::Unknown}
+\end{minted}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unload\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Unload {Enum::Unload}
+\end{minted}
+卸载。\par 对应于   \verb|UnitCommandTypes::Enum::Unload|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unload\_All\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Unload_All {Enum::Unload_All}
+\end{minted}
+卸载全部。\par 对应于   \verb|UnitCommandTypes::Enum::Unload_All|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unload\_All\_Position\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Unload_All_Position {Enum::Unload_All_Position}
+\end{minted}
+全部卸载到指定位置。\par 对应于   \verb|UnitCommandTypes::Enum::Unload_All_Position|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unsiege\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Unsiege {Enum::Unsiege}
+\end{minted}
+解除攻城模式。\par 对应于   \verb|UnitCommandTypes::Enum::Unsiege|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Upgrade\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Upgrade {Enum::Upgrade}
+\end{minted}
+升级。\par 对应于   \verb|UnitCommandTypes::Enum::Upgrade|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Use\_Tech\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Use_Tech {Enum::Use_Tech}
+\end{minted}
+使用技能。\par 对应于   \verb|UnitCommandTypes::Enum::Use_Tech|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Use\_Tech\_Position\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Use_Tech_Position {Enum::Use_Tech_Position}
+\end{minted}
+在指定位置使用技能。\par 对应于   \verb|UnitCommandTypes::Enum::Use_Tech_Position|  。
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Use\_Tech\_Unit\{\}, arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitCommandTypes::Use_Tech_Unit {Enum::Use_Tech_Unit}
+\end{minted}
+对unit使用技能。\par 对应于   \verb|UnitCommandTypes::Enum::Use_Tech_Unit|  。
+\end{tcolorbox}

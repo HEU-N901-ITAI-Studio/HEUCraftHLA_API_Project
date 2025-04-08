@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{Color}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{id}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{Color}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{red}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{green}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{blue}\PYG{p}{)}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{blue}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{green}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{red}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{k}{const}
+\end{Verbatim}
