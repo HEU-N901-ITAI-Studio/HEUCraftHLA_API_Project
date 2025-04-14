@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Archon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Archon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Dark\PYGZus{}Archon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Dark\PYGZus{}Archon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Dark\PYGZus{}Templar}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Dark\PYGZus{}Templar}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Dragoon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Dragoon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}High\PYGZus{}Templar}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}High\PYGZus{}Templar}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Probe}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Probe}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Reaver}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Reaver}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Scarab}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Scarab}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Protoss\PYGZus{}Zealot}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Protoss\PYGZus{}Zealot}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Aldaris}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Aldaris}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Artanis}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Artanis}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Danimoth}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Danimoth}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Dark\PYGZus{}Templar}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Dark\PYGZus{}Templar}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Fenix\PYGZus{}Dragoon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Fenix\PYGZus{}Dragoon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Fenix\PYGZus{}Zealot}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Fenix\PYGZus{}Zealot}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Gantrithor}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Gantrithor}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Mojo}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Mojo}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Raszagal}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Raszagal}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Tassadar}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Tassadar}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Tassadar\PYGZus{}Zeratul\PYGZus{}Archon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Tassadar\PYGZus{}Zeratul\PYGZus{}Archon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Warbringer}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Warbringer}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Zeratul}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Zeratul}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

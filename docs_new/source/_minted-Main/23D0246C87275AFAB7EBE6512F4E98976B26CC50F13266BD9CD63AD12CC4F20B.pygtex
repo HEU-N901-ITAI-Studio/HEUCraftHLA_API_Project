@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Alan\PYGZus{}Schezar}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Alan\PYGZus{}Schezar}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Alexei\PYGZus{}Stukov}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Alexei\PYGZus{}Stukov}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Arcturus\PYGZus{}Mengsk}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Arcturus\PYGZus{}Mengsk}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Edmund\PYGZus{}Duke\PYGZus{}Tank\PYGZus{}Mode}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Edmund\PYGZus{}Duke\PYGZus{}Tank\PYGZus{}Mode}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Edmund\PYGZus{}Duke\PYGZus{}Siege\PYGZus{}Mode}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Edmund\PYGZus{}Duke\PYGZus{}Siege\PYGZus{}Mode}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Gerard\PYGZus{}DuGalle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Gerard\PYGZus{}DuGalle}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Gui\PYGZus{}Montag}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Gui\PYGZus{}Montag}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Hyperion}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Hyperion}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Jim\PYGZus{}Raynor\PYGZus{}Marine}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Jim\PYGZus{}Raynor\PYGZus{}Marine}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Jim\PYGZus{}Raynor\PYGZus{}Vulture}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Jim\PYGZus{}Raynor\PYGZus{}Vulture}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Magellan}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Magellan}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Norad\PYGZus{}II}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Norad\PYGZus{}II}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Samir\PYGZus{}Duran}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Samir\PYGZus{}Duran}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Sarah\PYGZus{}Kerrigan}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Sarah\PYGZus{}Kerrigan}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Hero\PYGZus{}Tom\PYGZus{}Kazansky}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Hero\PYGZus{}Tom\PYGZus{}Kazansky}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Civilian}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Civilian}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

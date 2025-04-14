@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Academy}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Academy}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Armory}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Armory}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Barracks}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Barracks}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Bunker}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Bunker}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Command\PYGZus{}Center}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Command\PYGZus{}Center}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Engineering\PYGZus{}Bay}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Engineering\PYGZus{}Bay}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Factory}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Factory}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Missile\PYGZus{}Turret}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Missile\PYGZus{}Turret}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Refinery}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Refinery}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Science\PYGZus{}Facility}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Science\PYGZus{}Facility}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Starport}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Starport}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Terran\PYGZus{}Supply\PYGZus{}Depot}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Terran\PYGZus{}Supply\PYGZus{}Depot}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

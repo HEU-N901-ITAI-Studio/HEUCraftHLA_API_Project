@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Crashed\PYGZus{}Norad\PYGZus{}II}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Crashed\PYGZus{}Norad\PYGZus{}II}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Ion\PYGZus{}Cannon}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Ion\PYGZus{}Cannon}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Power\PYGZus{}Generator}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Power\PYGZus{}Generator}\PYG{p}{\PYGZcb{}}
+\PYG{k}{constexpr}\PYG{+w}{ }\PYG{n}{UnitType}\PYG{+w}{ }\PYG{n}{Special\PYGZus{}Psi\PYGZus{}Disrupter}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n}{Enum}\PYG{o}{:}\PYG{o}{:}\PYG{n}{Special\PYGZus{}Psi\PYGZus{}Disrupter}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

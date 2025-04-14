@@ -283,3 +283,471 @@ constexpr UnitType Special_Start_Location {Enum::Special_Start_Location}
 \item UnitType
 \end{itemize}
 \end{refer}
+
+
+\subsection{函数文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=allMacroTypes(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+const UnitType::set& BWAPI::UnitTypes::allMacroTypes ()
+\end{minted}
+获取所有宏观单位类型（macro unit types）的集合。\par
+宏观单位类型是一种虚拟的单位类型，被某些函数使用。这些类型包括：所有单位（AllUnits）、步兵（Men）、建筑（Buildings）和工厂（Factories）。这些类型的作用是与《Broodwar》中使用的相同类型匹配，也可以在StarEdit地图编辑器中看到。
+\begin{return}
+\begin{itemize}
+    \item UnitSizeType::set：一个包含所有宏观单位类型的常量集合。
+\end{itemize}
+\end{return}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=allUnitTypes(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+const UnitType::set& BWAPI::UnitTypes::allUnitTypes ()
+\end{minted}
+获取所有已定义的单位类型的集合。
+\begin{return}
+\begin{itemize}
+    \item UnitSizeType::set：一个包含所有可用单位类型的常量集合。
+\end{itemize}
+\end{return}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=maxUnitHeight(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+int BWAPI::UnitTypes::maxUnitHeight ()
+\end{minted}
+从所有单位的集合中获取最大单位高度。\par 用于内部高效地搜索单位位置。
+\begin{return}
+\begin{itemize}
+    \item int：所有单位类型的最大高度，以像素为单位。
+\end{itemize}
+\end{return}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=maxUnitWidth(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+int BWAPI::UnitTypes::maxUnitWidth ()
+\end{minted}
+从所有单位的集合中获取最大单位宽度。\par 用于内部高效地搜索单位位置。
+\begin{return}
+\begin{itemize}
+    \item int：所有单位类型的最大宽度，以像素为单位。
+\end{itemize}
+\end{return}
+\end{tcolorbox}
+
+
+\subsection{变量文档}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=AllUnits(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::AllUnits {Enum::AllUnits}
+\end{minted}
+一种特殊的宏类型，用于获取所有单位类型的统计数据。
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Buildings(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::Buildings {Enum::Buildings}
+\end{minted}
+一种特殊的宏类型，用于获取所有建筑的统计数据。
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Factories(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::Factories {Enum::Factories}
+\end{minted}
+一种特殊的宏类型，用于获取所有能够生产单位的建筑的统计数据。
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Men(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::Men {Enum::Men}
+\end{minted}
+一种特殊的宏类型，用于获取所有可移动的非建筑单位的统计数据。
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=None(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::None {Enum::None}
+\end{minted}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Unknown(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+constexpr UnitType BWAPI::UnitTypes::Unknown {Enum::Unknown}
+\end{minted}
+\end{tcolorbox}
+
+\subsection{变量(人族地面单位)文档}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Firebat(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Firebat {Enum::Terran_Firebat}
+\end{minted}
+对应于  $UnitTypes::Enum::Terran_Firebat$ 
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：50
+    \item \textbf{护甲}：1
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：50 矿，25 气，占用2人口
+    \item \textbf{建造时间}：360帧
+    \item \textbf{建造得分}：100
+    \item \textbf{摧毁得分}：200
+    \item \textbf{最大速度}：4
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：40
+    \item \textbf{地面武器}：喷火器 x 3（Flame Thrower x 3）
+    \item \textbf{单位大小}：23x22像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：96
+    \item \textbf{视野范围}：224
+    \item \textbf{能力}：
+        \begin{itemize}
+            \item 兴奋剂（Stim Packs）
+        \end{itemize}
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族步兵护甲（Terran Infantry Armor）
+            \item 人族步兵武器（Terran Infantry Weapons）
+        \end{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族兵营（Terran Barracks）
+            \item 人族军械库（Terran Academy）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族兵营（Terran Barracks）
+    \item \textbf{属性}：有机单位（Organic）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Ghost(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Ghost {Enum::Terran_Ghost}
+\end{minted}
+对应于  $UnitTypes::Enum::Terran_Ghost$ 
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：45
+    \item \textbf{能量值}：200
+    \item \textbf{护甲}：0
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：25 矿，75 气，占用2人口
+    \item \textbf{建造时间}：750帧
+    \item \textbf{建造得分}：175
+    \item \textbf{摧毁得分}：350
+    \item \textbf{最大速度}：4
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：40
+    \item \textbf{地面武器}：C 10 Canister Rifle
+    \item \textbf{空中武器}：C 10 Canister Rifle
+    \item \textbf{单位大小}：15x22像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：0
+    \item \textbf{视野范围}：288
+    \item \textbf{能力}：
+        \begin{itemize}
+            \item 锁定（Lockdown）
+            \item 人员隐形（Personnel Cloaking）
+            \item 核弹（Nuclear Strike）
+        \end{itemize}
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族步兵护甲（Terran Infantry Armor）
+            \item 人族步兵武器（Terran Infantry Weapons）
+            \item 视觉植入（Ocular Implants）
+            \item 莫比乌斯反应堆（Moebius Reactor）
+        \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Ghost(), arc=0mm]
+    \begin{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族兵营（Terran Barracks）
+            \item 人族军械库（Terran Academy）
+            \item 人族隐秘行动（Terran Covert Ops）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族兵营（Terran Barracks）
+    \item \textbf{属性}：有机单位（Organic）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Goliath(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Goliath {Enum::Terran_Goliath}
+\end{minted}
+对应于  $UnitTypes::Enum::Terran_Goliath$ 
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：125
+    \item \textbf{护甲}：1
+    \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+    \item \textbf{成本}：100 矿，50 气，占用4人口
+    \item \textbf{建造时间}：600帧
+    \item \textbf{建造得分}：200
+    \item \textbf{摧毁得分}：400
+    \item \textbf{最大速度}：4.57
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：17
+    \item \textbf{地面武器}：双联自动炮（Twin Autocannons）
+    \item \textbf{空中武器}：地狱火导弹包（Hellfire Missile Pack）
+    \item \textbf{单位大小}：32x32像素；1x1格
+    \item \textbf{单位尺寸类型}：大型（Large）
+    \item \textbf{所需空间}：2
+    \item \textbf{搜索范围}：160
+    \item \textbf{视野范围}：256
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族车辆护甲（Terran Vehicle Plating）
+            \item 人族车辆武器（Terran Vehicle Weapons）
+            \item 卡戎助推器（Charon Boosters）
+        \end{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族工厂（Terran Factory）
+            \item 人族军械库（Terran Armory）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族工厂（Terran Factory）
+    \item \textbf{属性}：机械单位（Mechanical）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Marine(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Marine {Enum::Terran_Marine}
+\end{minted}
+人族一级单位。\par
+对应于  $UnitTypes::Enum::Terran_Marine$ 
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：40
+    \item \textbf{护甲}：0
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：50 矿，0 气，占用2人口
+    \item \textbf{建造时间}：360帧
+    \item \textbf{建造得分}：50
+    \item \textbf{摧毁得分}：100
+    \item \textbf{最大速度}：4
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：40
+    \item \textbf{地面武器}：高斯步枪（Gauss Rifle）
+    \item \textbf{空中武器}：高斯步枪（Gauss Rifle）
+    \item \textbf{单位大小}：17x20像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：0
+    \item \textbf{视野范围}：224
+    \item \textbf{能力}：
+        \begin{itemize}
+            \item 兴奋剂（Stim Packs）
+        \end{itemize}
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item U-238 弹药（U 238 Shells）
+            \item 人族步兵护甲（Terran Infantry Armor）
+            \item 人族步兵武器（Terran Infantry Weapons）
+        \end{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族兵营（Terran Barracks）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族兵营（Terran Barracks）
+    \item \textbf{属性}：有机单位（Organic）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Medic(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Medic {Enum::Terran_Medic}
+\end{minted}
+人族一级单位。\par
+对应于  $UnitTypes::Enum::Terran_Marine$ 
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：60
+    \item \textbf{能量值}：200
+    \item \textbf{护甲}：1
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：50 矿，25 气，占用2人口
+    \item \textbf{建造时间}：450帧
+    \item \textbf{建造得分}：125
+    \item \textbf{摧毁得分}：250
+    \item \textbf{最大速度}：4
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：40
+    \item \textbf{单位大小}：17x20像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：288
+    \item \textbf{视野范围}：288
+    \item \textbf{能力}：
+        \begin{itemize}
+            \item 恢复（Restoration）
+            \item 光学迷彩（Optical Flare）
+            \item 治疗（Healing）
+        \end{itemize}
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族步兵护甲（Terran Infantry Armor）
+            \item 卡多克反应堆（Caduceus Reactor）
+        \end{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族兵营（Terran Barracks）
+            \item 人族军械库（Terran Academy）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族兵营（Terran Barracks）
+    \item \textbf{属性}：有机单位（Organic）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_SCV(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_SCV {Enum::Terran_SCV}
+\end{minted}
+人族工人单位。\par
+\begin{refer}
+    \begin{itemize}
+        \item Race::getWorker 
+    \end{itemize}
+\end{refer}
+对应于  $ UnitTypes::Enum::Terran_SCV $ 
+
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：60
+    \item \textbf{护甲}：0
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：50 矿，0 气，占用2人口
+    \item \textbf{建造时间}：300帧
+    \item \textbf{建造得分}：50
+    \item \textbf{摧毁得分}：100
+    \item \textbf{最大速度}：4.92
+    \item \textbf{加速度}：67
+    \item \textbf{停止距离}：12227
+    \item \textbf{转向半径}：40
+    \item \textbf{地面武器}：等离子切割器（Fusion Cutter）
+    \item \textbf{单位大小}：23x23像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：32
+    \item \textbf{视野范围}：224
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族步兵护甲（Terran Infantry Armor）
+        \end{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族指挥中心（Terran Command Center）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族指挥中心（Terran Command Center）
+    \item \textbf{属性}：有机单位（Organic）、机械单位（Mechanical）、工人单位（Worker）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Siege\_Tank\_Siege\_Mode(), arc=0mm]
+\begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Siege_Tank_Siege_Mode {Enum::Terran_Siege_Tank_Siege_Mode}
+\end{minted}
+人族工人单位。\par
+\begin{refer}
+    \begin{itemize}
+        \item Race::getWorker 
+    \end{itemize}
+\end{refer}
+对应于  $ UnitTypes::Enum::Terran_Siege_Tank_Siege_Mode $ 
+
+\begin{itemize}
+    \item \textbf{种族}：人族（Terran）
+    \item \textbf{生命值}：60
+    \item \textbf{能量值}：200
+    \item \textbf{护甲}：1
+    \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+    \item \textbf{成本}：50 矿，25 气，占用2人口
+    \item \textbf{建造时间}：450帧
+    \item \textbf{建造得分}：125
+    \item \textbf{摧毁得分}：250
+    \item \textbf{最大速度}：4
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转向半径}：40
+    \item \textbf{单位大小}：17x20像素；1x1格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：288
+    \item \textbf{视野范围}：288
+    \item \textbf{能力}：
+        \begin{itemize}
+            \item 恢复（Restoration）
+            \item 光学迷彩（Optical Flare）
+            \item 治疗（Healing）
+        \end{itemize}
+    \item \textbf{升级}：
+        \begin{itemize}
+            \item 人族步兵护甲（Terran Infantry Armor）
+            \item 卡多克反应堆（Caduceus Reactor）
+        \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Siege\_Tank\_Siege\_Mode(), arc=0mm]
+    \begin{itemize}
+    \item \textbf{前置建筑}：
+        \begin{itemize}
+            \item 人族兵营（Terran Barracks）
+            \item 人族军械库（Terran Academy）
+        \end{itemize}
+    \item \textbf{由以下建筑生成}：人族兵营（Terran Barracks）
+    \item \textbf{属性}：有机单位（Organic）
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Siege\_Tank\_Tank\_Mode(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Siege_Tank_Tank_Mode {Enum::Terran_Siege_Tank_Tank_Mode}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Siege_Tank_Tank_Mode $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：150
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：150 矿，100 气，占用4人口
+        \item \textbf{建造时间}：750帧
+        \item \textbf{建造得分}：350
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：13
+        \item \textbf{地面武器}：阿克隆加农炮（Arclite Cannon）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：4
+        \item \textbf{搜索范围}：256
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 坦克攻城模式（Tank Siege Mode）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族工厂（Terran Factory）
+                \item 人族机械车间（Terran Machine Shop）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族工厂（Terran Factory）
+        \item \textbf{属性}：机械单位（Mechanical）
+    \end{itemize}
+\end{tcolorbox}
