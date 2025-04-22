@@ -751,3 +751,1089 @@ BWAPI::UnitTypes::Terran_Siege_Tank_Tank_Mode {Enum::Terran_Siege_Tank_Tank_Mode
         \item \textbf{属性}：机械单位（Mechanical）
     \end{itemize}
 \end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Vulture(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Vulture {Enum::Terran_Vulture}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Vulture $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：80
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：75 矿，0 气，占用4人口
+        \item \textbf{建造时间}：450帧
+        \item \textbf{建造得分}：75
+        \item \textbf{摧毁得分}：150
+        \item \textbf{最大速度}：6.4
+        \item \textbf{加速度}：100
+        \item \textbf{停止距离}：14569
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：破片手雷（Fragmentation Grenade）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 蜘蛛雷（Spider Mines）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 离子推进器（Ion Thrusters）
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族工厂（Terran Factory）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族工厂（Terran Factory）
+        \item \textbf{属性}：机械单位（Mechanical）
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Vulture\_Spider\_Mine(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Vulture_Spider_Mine {Enum::Terran_Vulture_Spider_Mine}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Vulture_Spider_Mine $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：20
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级60（Upgrade 60）
+        \item \textbf{成本}：1 矿，0 气，占用0人口
+        \item \textbf{建造时间}：1帧
+        \item \textbf{摧毁得分}：25
+        \item \textbf{最大速度}：16
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：127
+        \item \textbf{地面武器}：蜘蛛雷（Spider Mines）
+        \item \textbf{单位大小}：15x15像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：96
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 无特殊属性
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(人族空中单位)文档}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Battlecruiser(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Battlecruiser {Enum::Terran_Battlecruiser}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Battlecruiser $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：500
+        \item \textbf{能量值}：200
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：400 矿，300 气，占用12人口
+        \item \textbf{建造时间}：2000帧
+        \item \textbf{建造得分}：1200
+        \item \textbf{摧毁得分}：2400
+        \item \textbf{最大速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转向半径}：20
+        \item \textbf{地面武器}：反地面激光炮（ATS Laser Battery）
+        \item \textbf{空中武器}：反空激光炮（ATA Laser Battery）
+        \item \textbf{单位大小}：75x59像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 大和炮（Yamato Gun）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+                \item 巨神反应堆（Colossus Reactor）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族星际港（Terran Starport）
+                \item 人族控制塔（Terran Control Tower）
+                \item 人族物理实验室（Terran Physics Lab）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族星际港（Terran Starport）
+        \item \textbf{属性}：飞行单位（Flyer）、机械单位（Mechanical）
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Dropship(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Dropship {Enum::Terran_Dropship}
+    \end{minted}
+    \begin{refer}
+        \begin{itemize}
+            \item Race::getTransport
+        \end{itemize}
+    \end{refer}
+    对应于  $ UnitTypes::Enum::Terran_Dropship $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：150
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：100 矿，100 气，占用4人口
+        \item \textbf{建造时间}：750帧
+        \item \textbf{建造得分}：300
+        \item \textbf{摧毁得分}：600
+        \item \textbf{最大速度}：5.47
+        \item \textbf{加速度}：17
+        \item \textbf{停止距离}：37756
+        \item \textbf{转向半径}：20
+        \item \textbf{单位大小}：49x37像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{运输空间提供}：8
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族星际港（Terran Starport）
+                \item 人族控制塔（Terran Control Tower）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族星际港（Terran Starport）
+        \item \textbf{属性}：飞行单位（Flyer）、机械单位（Mechanical）
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Nuclear\_Missile(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Nuclear_Missile {Enum::Terran_Nuclear_Missile}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Nuclear_Missile $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：100
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级60（Upgrade 60）
+        \item \textbf{成本}：200 矿，200 气，占用16人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{建造得分}：800
+        \item \textbf{最大速度}：33.33
+        \item \textbf{加速度}：33
+        \item \textbf{停止距离}：1103213
+        \item \textbf{转向半径}：127
+        \item \textbf{单位大小}：15x29像素；1x1格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：96
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族核弹发射井（Terran Nuclear Silo）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族核弹发射井（Terran Nuclear Silo）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Science\_Vessel(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Science_Vessel {Enum::Terran_Science_Vessel}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Science_Vessel $ 
+    
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：200
+        \item \textbf{能量值}：200
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：100 矿，225 气，占用4人口
+        \item \textbf{建造时间}：1200帧
+        \item \textbf{建造得分}：625
+        \item \textbf{摧毁得分}：1250
+        \item \textbf{最大速度}：5
+        \item \textbf{加速度}：50
+        \item \textbf{停止距离}：5120
+        \item \textbf{转向半径}：40
+        \item \textbf{单位大小}：65x50像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 电磁脉冲冲击波（EMP Shockwave）
+                \item 防御矩阵（Defensive Matrix）
+                \item 辐射（Irradiate）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 泰坦反应堆（Titan Reactor）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族星际港（Terran Starport）
+                \item 人族控制塔（Terran Control Tower）
+                \item 人族科学设施（Terran Science Facility）
+            \end{itemize}
+        \end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Science\_Vessel(), arc=0mm]
+    \begin{itemize}
+        \item \textbf{由以下建筑生成}：人族星际港（Terran Starport）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Valkyrie(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Valkyrie {Enum::Terran_Valkyrie}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Valkyrie $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：250 矿，125 气，占用6人口
+        \item \textbf{建造时间}：750帧
+        \item \textbf{建造得分}：400
+        \item \textbf{摧毁得分}：800
+        \item \textbf{最大速度}：6.6
+        \item \textbf{加速度}：65
+        \item \textbf{停止距离}：21901
+        \item \textbf{转向半径}：30
+        \item \textbf{空中武器}：光环火箭 x 4（Halo Rockets x 4）
+        \item \textbf{单位大小}：49x37像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族星际港（Terran Starport）
+                \item 人族军械库（Terran Armory）
+                \item 人族控制塔（Terran Control Tower）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族星际港（Terran Starport）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Wraith(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Terran_Wraith {Enum::Terran_Wraith}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran_Wraith $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：120
+        \item \textbf{能量值}：200
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：150 矿，100 气，占用4人口
+        \item \textbf{建造时间}：900帧
+        \item \textbf{建造得分}：400
+        \item \textbf{摧毁得分}：800
+        \item \textbf{最大速度}：6.67
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：21745
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：脉冲激光（Burst Lasers）
+        \item \textbf{空中武器}：双子导弹（Gemini Missiles）
+        \item \textbf{单位大小}：38x30像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 隐形领域（Cloaking Field）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+                \item 阿波罗反应堆（Apollo Reactor）
+            \end{itemize}
+        \item \textbf{前置建筑}：
+            \begin{itemize}
+                \item 人族星际港（Terran Starport）
+            \end{itemize}
+        \item \textbf{由以下建筑生成}：人族星际港（Terran Starport）
+    \end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Science\_Vessel(), arc=0mm]
+    \begin{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(人族英雄单位)文档}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Alan\_Schezar(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Alan_Schezar {Enum::Hero_Alan_Schezar}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Alan_Schezar $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：300
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：200 矿，100 气，占用0人口
+        \item \textbf{建造时间}：1200帧
+        \item \textbf{摧毁得分}：800
+        \item \textbf{最大速度}：4.57
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：17
+        \item \textbf{地面武器}：双联自动炮（Twin Autocannons Alan Schezar）
+        \item \textbf{空中武器}：地狱火导弹包（Hellfire Missile Pack Alan Schezar）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：256
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Alexei\_Stukov(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Alexei_Stukov {Enum::Hero_Alexei_Stukov}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Alexei_Stukov $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：250
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：200 矿，75 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：C 10 Canister Rifle Alexei Stukov
+        \item \textbf{空中武器}：C 10 Canister Rifle Alexei Stukov
+        \item \textbf{单位大小}：15x22像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 锁定（Lockdown）
+                \item 人员隐形（Personnel Cloaking）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Arcturus\_Mengsk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Arcturus_Mengsk {Enum::Hero_Arcturus_Mengsk}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Arcturus_Mengsk $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：1000
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：800 矿，600 气，占用0人口
+        \item \textbf{建造时间}：4800帧
+        \item \textbf{摧毁得分}：4800
+        \item \textbf{最大速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转向半径}：20
+        \item \textbf{地面武器}：反地面激光炮（ATS Laser Battery Hero）
+        \item \textbf{空中武器}：反空激光炮（ATA Laser Battery Hero）
+        \item \textbf{单位大小}：75x59像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Edmund\_Duke\_Tank\_Mode(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Edmund_Duke_Tank_Mode {Enum::Hero_Edmund_Duke_Tank_Mode}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Edmund_Duke_Tank_Mode $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：300 矿，200 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：1400
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：13
+        \item \textbf{地面武器}：阿克隆加农炮（Arclite Cannon Edmund Duke）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：4
+        \item \textbf{搜索范围}：256
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 坦克攻城模式（Tank Siege Mode）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Edmund\_Duke\_Siege\_Mode(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Edmund_Duke_Siege_Mode {Enum::Hero_Edmund_Duke_Siege_Mode}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Edmund_Duke_Siege_Mode $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：300 矿，200 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：1400
+        \item \textbf{最大速度}：0
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：阿克隆冲击炮（Arclite Shock Cannon Edmund Duke）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 坦克攻城模式（Tank Siege Mode）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Gerard\_DuGalle(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Gerard_DuGalle {Enum::Hero_Gerard_DuGalle}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Gerard_DuGalle $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：700
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：800 矿，600 气，占用0人口
+        \item \textbf{建造时间}：4800帧
+        \item \textbf{摧毁得分}：4800
+        \item \textbf{最大速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转向半径}：20
+        \item \textbf{地面武器}：反地面激光炮（ATS Laser Battery Hero）
+        \item \textbf{空中武器}：反空激光炮（ATA Laser Battery Hero）
+        \item \textbf{单位大小}：75x59像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 大和炮（Yamato Gun）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+    
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Gui\_Montag(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Gui_Montag {Enum::Hero_Gui_Montag}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Gui_Montag $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：160
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：100 矿，50 气，占用0人口
+        \item \textbf{建造时间}：720帧
+        \item \textbf{摧毁得分}：400
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：喷火器 x 3（Flame Thrower Gui Montag x 3）
+        \item \textbf{单位大小}：23x22像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：224
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 兴奋剂（Stim Packs）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+    
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Hyperion(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Hyperion {Enum::Hero_Hyperion}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Hyperion $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：850
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：800 矿，600 气，占用0人口
+        \item \textbf{建造时间}：2400帧
+        \item \textbf{摧毁得分}：4800
+        \item \textbf{最大速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转向半径}：20
+        \item \textbf{地面武器}：反地面激光炮（ATS Laser Battery Hyperion）
+        \item \textbf{空中武器}：反空激光炮（ATA Laser Battery Hyperion）
+        \item \textbf{单位大小}：75x59像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 大和炮（Yamato Gun）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Jim\_Raynor\_Marine(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Jim_Raynor_Marine {Enum::Hero_Jim_Raynor_Marine}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Jim_Raynor_Marine $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：50 矿，0 气，占用0人口
+        \item \textbf{建造时间}：1帧
+        \item \textbf{摧毁得分}：200
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：高斯步枪（Gauss Rifle Jim Raynor）
+        \item \textbf{空中武器}：高斯步枪（Gauss Rifle Jim Raynor）
+        \item \textbf{单位大小}：17x20像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 兴奋剂（Stim Packs）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Jim\_Raynor\_Vulture(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Jim_Raynor_Vulture {Enum::Hero_Jim_Raynor_Vulture}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Jim_Raynor_Vulture $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：300
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：150 矿，0 气，占用0人口
+        \item \textbf{建造时间}：900帧
+        \item \textbf{摧毁得分}：300
+        \item \textbf{最大速度}：6.4
+        \item \textbf{加速度}：100
+        \item \textbf{停止距离}：14569
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：破片手雷（Fragmentation Grenade Jim Raynor）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 蜘蛛雷（Spider Mines）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Magellan(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Magellan {Enum::Hero_Magellan}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Magellan $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：800
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：50 矿，600 气，占用0人口
+        \item \textbf{建造时间}：2400帧
+        \item \textbf{摧毁得分}：2500
+        \item \textbf{最大速度}：5
+        \item \textbf{加速度}：50
+        \item \textbf{停止距离}：5120
+        \item \textbf{转向半径}：40
+        \item \textbf{单位大小}：65x50像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 电磁脉冲冲击波（EMP Shockwave）
+                \item 防御矩阵（Defensive Matrix）
+                \item 辐射（Irradiate）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Norad\_II(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Norad_II {Enum::Hero_Norad_II}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Norad\_II $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：700
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：800 矿，600 气，占用0人口
+        \item \textbf{建造时间}：4800帧
+        \item \textbf{摧毁得分}：4800
+        \item \textbf{最大速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转向半径}：20
+        \item \textbf{地面武器}：反地面激光炮（ATS Laser Battery Hero）
+        \item \textbf{空中武器}：反空激光炮（ATA Laser Battery Hero）
+        \item \textbf{单位大小}：75x59像素；2x2格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 山岚炮（Yamato Gun）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Samir\_Duran(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Hero_Samir_Duran {Enum::Hero_Samir_Duran}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Samir\_Duran $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：200
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：200 矿，75 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：C 10 Canister Rifle Samir Duran
+        \item \textbf{空中武器}：C 10 Canister Rifle Samir Duran
+        \item \textbf{单位大小}：15x22像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 锁定（Lockdown）
+                \item 人员隐形（Personnel Cloaking）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Sarah\_Kerrigan(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Hero_Sarah_Kerrigan {Enum::Hero_Sarah_Kerrigan}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Sarah\_Kerrigan $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：250
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：50 矿，150 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：C 10 Canister Rifle Sarah Kerrigan
+        \item \textbf{空中武器}：C 10 Canister Rifle Sarah Kerrigan
+        \item \textbf{单位大小}：15x22像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 锁定（Lockdown）
+                \item 人员隐形（Personnel Cloaking）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Tom\_Kazansky(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Hero_Tom_Kazansky {Enum::Hero_Tom_Kazansky}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Tom\_Kazansky $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：500
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：人族舰船护甲（Terran Ship Plating）
+        \item \textbf{成本}：400 矿，200 气，占用0人口
+        \item \textbf{建造时间}：1800帧
+        \item \textbf{摧毁得分}：1600
+        \item \textbf{最大速度}：6.67
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：21745
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：脉冲激光（Burst Lasers Tom Kazansky）
+        \item \textbf{空中武器}：双子导弹（Gemini Missiles Tom Kazansky）
+        \item \textbf{单位大小}：38x30像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 隐形领域（Cloaking Field）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族舰船护甲（Terran Ship Plating）
+                \item 人族舰船武器（Terran Ship Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Terran\_Civilian(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Terran_Civilian {Enum::Terran_Civilian}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Terran\_Civilian $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：40
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：0 矿，0 气，占用0人口
+        \item \textbf{建造时间}：1帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{单位大小}：17x20像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(人族英雄单位)文档}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Alan\_Schezar(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Hero_Alan_Schezar {Enum::Hero_Alan_Schezar}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Alan\_Schezar $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：300
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族车辆护甲（Terran Vehicle Plating）
+        \item \textbf{成本}：200 矿，100 气，占用0人口
+        \item \textbf{建造时间}：1200帧
+        \item \textbf{摧毁得分}：800
+        \item \textbf{最大速度}：4.57
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：17
+        \item \textbf{地面武器}：双联自动炮（Twin Autocannons Alan Schezar）
+        \item \textbf{空中武器}：地狱火导弹包（Hellfire Missile Pack Alan Schezar）
+        \item \textbf{单位大小}：32x32像素；1x1格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：256
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族车辆护甲（Terran Vehicle Plating）
+                \item 人族车辆武器（Terran Vehicle Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Alexei\_Stukov(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+constexpr UnitType Hero_Alexei_Stukov {Enum::Hero_Alexei_Stukov}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero\_Alexei\_Stukov $ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：250
+        \item \textbf{能量值}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：人族步兵护甲（Terran Infantry Armor）
+        \item \textbf{成本}：200 矿，75 气，占用0人口
+        \item \textbf{建造时间}：1500帧
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最大速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转向半径}：40
+        \item \textbf{地面武器}：C 10 Canister Rifle Alexei Stukov
+        \item \textbf{空中武器}：C 10 Canister Rifle Alexei Stukov
+        \item \textbf{单位大小}：15x22像素；1x1格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{能力}：
+            \begin{itemize}
+                \item 锁定（Lockdown）
+                \item 人员隐形（Personnel Cloaking）
+            \end{itemize}
+        \item \textbf{升级}：
+            \begin{itemize}
+                \item 人族步兵护甲（Terran Infantry Armor）
+                \item 人族步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
