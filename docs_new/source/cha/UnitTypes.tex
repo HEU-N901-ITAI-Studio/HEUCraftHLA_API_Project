@@ -5130,51 +5130,3226 @@ BWAPI::UnitTypes::Special_Protoss_Temple {Enum::Special_Protoss_Temple}
     \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Stasis\_Cell\_Prison(), arc=0mm]
     \begin{minted}[frame=none]{cpp}
-
+BWAPI::UnitTypes::Special_Stasis_Cell_Prison {Enum::Special_Stasis_Cell_Prison}
     \end{minted}
-    对应于  $  $ 
-    
+    对应于  $ UnitTypes::Special_Stasis_Cell_Prison $ 
+    \begin{itemize}
+        \item \textbf{种族}：神族（Protoss）
+        \item \textbf{生命值}：2000
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：150 矿，0 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：5000
+        \item \textbf{单位大小}：128x96 像素；4x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Warp\_Gate(), arc=0mm]
     \begin{minted}[frame=none]{cpp}
-
+BWAPI::UnitTypes::Special_Warp_Gate {Enum::Special_Warp_Gate}
     \end{minted}
-    对应于  $  $ 
-    
+    对应于  $UnitTypes::Special_Warp_Gate$ 
+    \begin{itemize}
+        \item \textbf{种族}：神族（Protoss）
+        \item \textbf{生命值}：700
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：600 矿，200 气，0 人口
+        \item \textbf{建造时间}：2400 帧
+        \item \textbf{摧毁得分}：2000
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_XelNaga\_Temple(), arc=0mm]
     \begin{minted}[frame=none]{cpp}
-
+BWAPI::UnitTypes::Special_XelNaga_Temple {Enum::Special_XelNaga_Temple}
     \end{minted}
-    对应于  $  $ 
-    
+    对应于  $UnitTypes::Special_XelNaga_Temple$ 
+    \begin{itemize}
+        \item \textbf{种族}：神族（Protoss）
+        \item \textbf{生命值}：5000
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1500 矿，500 气，0 人口
+        \item \textbf{建造时间}：4800 帧
+        \item \textbf{摧毁得分}：5000
+        \item \textbf{单位大小}：160x98 像素；5x4 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
-    \begin{minted}[frame=none]{cpp}
+\subsubsection{变量(虫族地面单位)}
 
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Broodling(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Broodling {Enum::Zerg_Broodling}
     \end{minted}
-    对应于  $  $ 
-    
+    对应于  $ UnitTypes::Enum::Zerg_Broodling $ 
+    \begin{itemize}
+    \item \textbf{种族}：虫族（Zerg）
+    \item \textbf{生命值}：30
+    \item \textbf{护甲}：0
+    \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+    \item \textbf{成本}：1 矿，1 气，0 人口
+    \item \textbf{建造时间}：1 帧
+    \item \textbf{摧毁得分}：25
+    \item \textbf{最高速度}：6
+    \item \textbf{加速度}：1
+    \item \textbf{停止距离}：1
+    \item \textbf{转弯半径}：27
+    \item \textbf{地面武器}：毒性孢子（Toxic Spores）
+    \item \textbf{单位大小}：19x19 像素；1x1 格
+    \item \textbf{单位尺寸类型}：小型（Small）
+    \item \textbf{所需空间}：1
+    \item \textbf{搜索范围}：96
+    \item \textbf{视野范围}：160
+    \item \textbf{升级项目}：
+        \begin{itemize}
+            \item 虫族甲壳（Zerg Carapace）
+            \item 虫族近战攻击（Zerg Melee Attacks）
+        \end{itemize}
+    \item \textbf{属性}：
+        \begin{itemize}
+            \item 有机单位（Organic）
+            \item 生命值可恢复（RegeneratesHP）
+        \end{itemize}
+\end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Defiler(), arc=0mm]
     \begin{minted}[frame=none]{cpp}
-
+BWAPI::UnitTypes::Zerg_Defiler {Enum::Zerg_Defiler}
     \end{minted}
-    对应于  $  $ 
-    
+    对应于  $ UnitTypes::Enum::Zerg_Defiler $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：80
+        \item \textbf{能量值}：200
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：50 矿，150 气，4 人口
+        \item \textbf{建造时间}：750 帧
+        \item \textbf{建造得分}：225
+        \item \textbf{摧毁得分}：450
+        \item \textbf{最高速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：27x25 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{技能}：
+            \begin{itemize}
+                \item 钻地（Burrowing）
+                \item 黑暗虫群（Dark Swarm）
+                \item 瘟疫（Plague）
+                \item 吞噬（Consume）
+            \end{itemize}
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 神经突触节点（Metasynaptic Node）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族污染者巢穴（Zerg Defiler Mound）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white, colframe=black!60!white, title=(), arc=0mm]
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Drone(), arc=0mm]
     \begin{minted}[frame=none]{cpp}
-
+BWAPI::UnitTypes::Zerg_Drone {Enum::Zerg_Drone}
     \end{minted}
-    对应于  $  $ 
-    
+    \begin{refer}
+        \begin{itemize}
+            \item Race::getWorker
+        \end{itemize}
+    \end{refer}
+    对应于  $ UnitTypes::Enum::Zerg_Drone $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：40
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：50 矿，0 气，2 人口
+        \item \textbf{建造时间}：300 帧
+        \item \textbf{建造得分}：50
+        \item \textbf{摧毁得分}：100
+        \item \textbf{最高速度}：4.92
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：12227
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：刺针（Spines）
+        \item \textbf{单位大小}：23x23 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{前置单位}：虫族幼虫（Zerg Larva）
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 工蜂（Worker）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
 \end{tcolorbox}
 
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Egg(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Egg {Enum::Zerg_Egg}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Egg $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：10
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：25
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：128
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{前置单位}：虫族幼虫（Zerg Larva）
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：有机单位（Organic）
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Hydralisk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Hydralisk {Enum::Zerg_Hydralisk}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Hydralisk $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：80
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：75 矿，25 气，2 人口
+        \item \textbf{建造时间}：420 帧
+        \item \textbf{建造得分}：125
+        \item \textbf{摧毁得分}：350
+        \item \textbf{最高速度}：3.66
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{地面武器}：针刺（Needle Spines）
+        \item \textbf{空中武器}：针刺（Needle Spines）
+        \item \textbf{单位大小}：21x23 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：192
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+                \item 肌肉增强（Muscular Augments）
+                \item 槽状脊刺（Grooved Spines）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族刺蛇巢穴（Zerg Hydralisk Den）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Infested\_Terran(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Infested_Terran {Enum::Zerg_Infested_Terran}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Infested_Terran $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：100 矿，50 气，2 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：200
+        \item \textbf{摧毁得分}：400
+        \item \textbf{最高速度}：5.82
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：自杀式感染枪兵（Suicide Infested Terran）
+        \item \textbf{单位大小}：17x20 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：160
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{前置单位}：虫族感染指挥中心（Zerg Infested Command Center）
+        \item \textbf{建造者}：虫族感染指挥中心（Zerg Infested Command Center）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Larva(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Larva {Enum::Zerg_Larva}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Larva $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：25
+        \item \textbf{护甲}：10
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高速度}：0
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：20
+        \item \textbf{单位大小}：16x16 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：128
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{前置单位}：虫族孵化场（Zerg Hatchery）
+        \item \textbf{建造者}：虫族孵化场（Zerg Hatchery）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Lurker(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Lurker {Enum::Zerg_Lurker}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Lurker $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：125
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：50 矿，100 气，4 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：250
+        \item \textbf{摧毁得分}：500
+        \item \textbf{最高速度}：5.82
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：地下刺（Subterranean Spines）
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：4
+        \item \textbf{搜索范围}：192
+        \item \textbf{视野范围}：256
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族导弹攻击（Zerg Missile Attacks）
+                \item 虫族甲壳（Zerg Carapace）
+            \end{itemize}
+        \item \textbf{所需科技}：潜伏者形态（Lurker Aspect）
+        \item \textbf{前置单位}：虫族刺蛇（Zerg Hydralisk）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Lurker\_Egg(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Lurker_Egg {Enum::Zerg_Lurker_Egg}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Lurker_Egg $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：10
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：500
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：128
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{所需科技}：潜伏者形态（Lurker Aspect）
+        \item \textbf{前置单位}：虫族刺蛇（Zerg Hydralisk）
+        \item \textbf{建造者}：虫族刺蛇（Zerg Hydralisk）
+        \item \textbf{属性}：有机单位（Organic）
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Ultralisk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Ultralisk {Enum::Zerg_Ultralisk}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Ultralisk $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：200 矿，200 气，8 人口
+        \item \textbf{建造时间}：900 帧
+        \item \textbf{建造得分}：650
+        \item \textbf{摧毁得分}：1300
+        \item \textbf{最高速度}：5.12
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：帝王之刃（Kaiser Blades）
+        \item \textbf{单位大小}：38x32 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：4
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：224
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+                \item 几丁质外壳（Chitinous Plating）
+                \item 合成代谢（Anabolic Synthesis）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族雷兽巢穴（Zerg Ultralisk Cavern）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Zergling(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Zergling {Enum::Zerg_Zergling}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Zergling $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：35
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：50 矿，0 气，1 人口
+        \item \textbf{建造时间}：420 帧
+        \item \textbf{建造得分}：25
+        \item \textbf{摧毁得分}：50
+        \item \textbf{最高速度}：5.49
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{地面武器}：爪子（Claws）
+        \item \textbf{单位大小}：16x16 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：160
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 代谢加速（Metabolic Boost）
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+                \item 肾上腺（Adrenal Glands）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族孵化池（Zerg Spawning Pool）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 一卵双单位（TwoUnitsInOneEgg）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(虫族空中单位)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Cocoon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Cocoon {Enum::Zerg_Cocoon}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Cocoon $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：1100
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：128
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族飞龙（Zerg Mutalisk）
+                \item 虫族大尖塔（Zerg Greater Spire）
+            \end{itemize}
+        \item \textbf{建造者}：虫族飞龙（Zerg Mutalisk）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Devourer(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Devourer {Enum::Zerg_Devourer}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Devourer $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：250
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：150 矿，50 气，4 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：550
+        \item \textbf{摧毁得分}：1100
+        \item \textbf{最高速度}：5
+        \item \textbf{加速度}：48
+        \item \textbf{停止距离}：17067
+        \item \textbf{转弯半径}：30
+        \item \textbf{空中武器}：腐蚀性酸液（Corrosive Acid）
+        \item \textbf{单位大小}：44x44 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：224
+        \item \textbf{视野范围}：320
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位攻击（Zerg Flyer Attacks）
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族飞龙（Zerg Mutalisk）
+                \item 虫族大尖塔（Zerg Greater Spire）
+            \end{itemize}
+        \item \textbf{建造者}：虫族飞龙（Zerg Mutalisk）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Guardian(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Guardian {Enum::Zerg_Guardian}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Guardian $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：150
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：50 矿，100 气，4 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：550
+        \item \textbf{摧毁得分}：1100
+        \item \textbf{最高速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{地面武器}：酸性孢子（Acid Spore）
+        \item \textbf{单位大小}：44x44 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位攻击（Zerg Flyer Attacks）
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族飞龙（Zerg Mutalisk）
+                \item 虫族大尖塔（Zerg Greater Spire）
+            \end{itemize}
+        \item \textbf{建造者}：虫族飞龙（Zerg Mutalisk）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Mutalisk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Mutalisk {Enum::Zerg_Mutalisk}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Mutalisk $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：120
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：100 矿，100 气，4 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：300
+        \item \textbf{摧毁得分}：600
+        \item \textbf{最高速度}：6.67
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：21745
+        \item \textbf{地面武器}：鞭笞者（Glave Wurm）
+        \item \textbf{空中武器}：鞭笞者（Glave Wurm）
+        \item \textbf{单位大小}：44x44 像素；2x2 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：224
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位攻击（Zerg Flyer Attacks）
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+            \end{itemize}
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族尖塔（Zerg Spire）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Overlord(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Overlord {Enum::Zerg_Overlord}
+    \end{minted}
+    必须研究腹囊（Ventral Sacs）才能成为运输单位。
+    \begin{refer}
+        \begin{itemize}
+            \item Race::getSupplyProvider
+            \item Race::getTransport
+        \end{itemize}
+    \end{refer}
+    对应于  $ UnitTypes::Enum::Zerg_Overlord $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：100 矿，0 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{提供补给}：16
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：200
+        \item \textbf{最高速度}：0.83
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：840
+        \item \textbf{单位大小}：50x50 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{运输空间}：8
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+                \item 腹囊（Ventral Sacs）
+                \item 触角（Antennae）
+                \item 充气甲壳（Pneumatized Carapace）
+            \end{itemize}
+        \item \textbf{前置单位}：虫族幼虫（Zerg Larva）
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 侦测单位（Detector）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Queen(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Queen {Enum::Zerg_Queen}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Queen $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：200
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：100 矿，0 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{提供补给}：16
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：200
+        \item \textbf{最高速度}：0.83
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：840
+        \item \textbf{单位大小}：50x50 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{运输空间}：8
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+                \item 腹囊（Ventral Sacs）
+                \item 触角（Antennae）
+                \item 充气甲壳（Pneumatized Carapace）
+            \end{itemize}
+        \item \textbf{前置单位}：虫族幼虫（Zerg Larva）
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 侦测单位（Detector）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Scourge(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Scourge {Enum::Zerg_Scourge}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Zerg_Scourge $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：25
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：25 矿，75 气，1 人口
+        \item \textbf{建造时间}：450 帧
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：200
+        \item \textbf{最高速度}：6.67
+        \item \textbf{加速度}：107
+        \item \textbf{停止距离}：13616
+        \item \textbf{空中武器}：自杀式毒刺（Suicide Scourge）
+        \item \textbf{单位大小}：24x24 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：160
+        \item \textbf{升级项目}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{前置单位}：
+            \begin{itemize}
+                \item 虫族幼虫（Zerg Larva）
+                \item 虫族尖塔（Zerg Spire）
+            \end{itemize}
+        \item \textbf{建造者}：虫族幼虫（Zerg Larva）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 一卵双单位（TwoUnitsInOneEgg）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(虫族英雄单位)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Devouring\_One(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Devouring_One {Enum::Hero_Devouring_One}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Devouring_One $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：120
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：100 矿，0 气，0 人口
+        \item \textbf{建造时间}：840 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{最高速度}：5.49
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{地面武器}：爪（吞噬型）（Claws Devouring One）
+        \item \textbf{单位大小}：16x16 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：160
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 一卵双单位（TwoUnitsInOneEgg）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Hunter\_Killer(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Hunter_Killer {Enum::Hero_Hunter_Killer}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Hunter_Killer $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：160
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：150 矿，50 气，0 人口
+        \item \textbf{建造时间}：780 帧
+        \item \textbf{摧毁得分}：500
+        \item \textbf{最高速度}：3.66
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{地面武器}：针刺（猎杀者型）（Needle Spines Hunter Killer）
+        \item \textbf{空中武器}：针刺（猎杀者型）（Needle Spines Hunter Killer）
+        \item \textbf{单位大小}：21x23 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{技能}：钻地（Burrowing）
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族导弹攻击（Zerg Missile Attacks）
+                \item 虫族甲壳（Zerg Carapace）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Infested\_Duran(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Infested_Duran {Enum::Hero_Infested_Duran}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Infested_Duran $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：300
+        \item \textbf{能量}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：200 矿，75 气，0 人口
+        \item \textbf{建造时间}：1500 帧
+        \item \textbf{摧毁得分}：700
+        \item \textbf{最高速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：C 10 罐式步枪（感染的杜兰）（C 10 Canister Rifle Infested Duran）
+        \item \textbf{空中武器}：C 10 罐式步枪（感染的杜兰）（C 10 Canister Rifle Infested Duran）
+        \item \textbf{单位大小}：15x22 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{技能}：
+            \begin{itemize}
+                \item 锁定（Lockdown）
+                \item 人员隐形（Personnel Cloaking）
+                \item 吞噬（Consume）
+            \end{itemize}
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 人类步兵武器（Terran Infantry Weapons）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Infested\_Kerrigan(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Infested_Kerrigan {Enum::Hero_Infested_Kerrigan}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Infested_Kerrigan $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：400
+        \item \textbf{能量}：250
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：200 矿，300 气，0 人口
+        \item \textbf{建造时间}：1500 帧
+        \item \textbf{摧毁得分}：4000
+        \item \textbf{最高速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：爪子（感染的凯瑞甘）（Claws Infested Kerrigan）
+        \item \textbf{单位大小}：15x22 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{所需空间}：1
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：288
+        \item \textbf{技能}：
+            \begin{itemize}
+                \item 人员隐形（Personnel Cloaking）
+                \item 诱捕（Ensnare）
+                \item 灵能风暴（Psionic Storm）
+                \item 吞噬（Consume）
+            \end{itemize}
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Kukulza\_Guardian(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Kukulza_Guardian {Enum::Hero_Kukulza_Guardian}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Kukulza_Guardian $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：100 矿，200 气，0 人口
+        \item \textbf{建造时间}：1200 帧
+        \item \textbf{摧毁得分}：2200
+        \item \textbf{最高速度}：2.5
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：7585
+        \item \textbf{转弯半径}：20
+        \item \textbf{地面武器}：酸性孢子（库库尔扎）（Acid Spore Kukulza）
+        \item \textbf{单位大小}：44x44 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位攻击（Zerg Flyer Attacks）
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Kukulza\_Mutalisk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Kukulza_Mutalisk {Enum::Hero_Kukulza_Mutalisk}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Kukulza_Mutalisk $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：300
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：200 矿，200 气，0 人口
+        \item \textbf{建造时间}：1200 帧
+        \item \textbf{摧毁得分}：1200
+        \item \textbf{最高速度}：6.67
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：21745
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：鞭笞者（库库尔扎）（Glave Wurm Kukulza）
+        \item \textbf{空中武器}：鞭笞者（库库尔扎）（Glave Wurm Kukulza）
+        \item \textbf{单位大小}：44x44 像素；2x2 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：224
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族飞行单位攻击（Zerg Flyer Attacks）
+                \item 虫族飞行单位甲壳（Zerg Flyer Carapace）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Matriarch(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Matriarch {Enum::Hero_Matriarch}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Matriarch $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：300
+        \item \textbf{能量}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：200 矿，300 气，0 人口
+        \item \textbf{建造时间}：1500 帧
+        \item \textbf{摧毁得分}：1600
+        \item \textbf{最高速度}：6.67
+        \item \textbf{加速度}：67
+        \item \textbf{停止距离}：21745
+        \item \textbf{转弯半径}：40
+        \item \textbf{单位大小}：48x48 像素；2x2 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{搜索范围}：256
+        \item \textbf{视野范围}：320
+        \item \textbf{技能}：
+            \begin{itemize}
+                \item 感染（Infestation）
+                \item 孵化幼虫（Spawn Broodlings）
+                \item 诱捕（Ensnare）
+                \item 寄生（Parasite）
+            \end{itemize}
+        \item \textbf{升级项目}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Torrasque(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Torrasque {Enum::Hero_Torrasque}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Torrasque $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：400 矿，400 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{摧毁得分}：2600
+        \item \textbf{最高速度}：5.12
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：40
+        \item \textbf{地面武器}：帝王之刃（托拉斯克）（Kaiser Blades Torrasque）
+        \item \textbf{单位大小}：38x32 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{所需空间}：4
+        \item \textbf{搜索范围}：96
+        \item \textbf{视野范围}：224
+        \item \textbf{升级项目}：
+            \begin{itemize}
+                \item 虫族甲壳（Zerg Carapace）
+                \item 虫族近战攻击（Zerg Melee Attacks）
+            \end{itemize}
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Unclean\_One(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Unclean_One {Enum::Hero_Unclean_One}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Unclean_One $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：250
+        \item \textbf{能量}：250
+        \item \textbf{护甲}：3
+        \item \textbf{护甲升级}：虫族甲壳（Zerg Carapace）
+        \item \textbf{成本}：50 矿，200 气，0 人口
+        \item \textbf{建造时间}：1500 帧
+        \item \textbf{摧毁得分}：900
+        \item \textbf{最高速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：27x25 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{所需空间}：2
+        \item \textbf{技能}：
+            \begin{itemize}
+                \item 钻地（Burrowing）
+                \item 黑暗虫群（Dark Swarm）
+                \item 瘟疫（Plague）
+                \item 吞噬（Consume）
+            \end{itemize}
+        \item \textbf{升级项目}：虫族甲壳（Zerg Carapace）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 有机单位（Organic）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Hero\_Yggdrasill(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Hero_Yggdrasill {Enum::Hero_Yggdrasill}
+    \end{minted}
+    对应于  $ UnitTypes::Enum::Hero_Yggdrasill $ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1000
+        \item \textbf{护甲}：4
+        \item \textbf{护甲升级}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{成本}：200 矿，0 气，0 人口
+        \item \textbf{建造时间}：1200 帧
+        \item \textbf{提供补给}：60
+        \item \textbf{摧毁得分}：400
+        \item \textbf{最高速度}：0.83
+        \item \textbf{加速度}：27
+        \item \textbf{停止距离}：840
+        \item \textbf{转弯半径}：20
+        \item \textbf{单位大小}：50x50 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{运输空间}：8
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{升级项目}：虫族飞行单位甲壳（Zerg Flyer Carapace）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 有机单位（Organic）
+                \item 侦测单位（Detector）
+                \item 英雄单位（Hero）
+                \item 生命值可恢复（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(虫族建筑)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Creep\_Colony(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Creep_Colony {Enum::Zerg_Creep_Colony}
+    \end{minted}
+    对应于  $UnitTypes::Zerg\_Creep\_Colony$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：75 矿，0 气，0 人口
+        \item \textbf{建造时间}：300 帧
+        \item \textbf{建造得分}：40
+        \item \textbf{摧毁得分}：120
+        \item \textbf{单位大小}：48x48 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Defiler\_Mound(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Defiler_Mound {Enum::Zerg_Defiler_Mound}
+    \end{minted}
+    对应于  $UnitTypes::Zerg\_Defiler\_Mound$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：850
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，100 气，0 人口
+        \item \textbf{建造时间}：900 帧
+        \item \textbf{建造得分}：150
+        \item \textbf{摧毁得分}：450
+        \item \textbf{单位大小}：97x37 像素；4x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族蜂巢（Zerg Hive）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Evolution\_Chamber(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Evolution_Chamber {Enum::Zerg_Evolution_Chamber}
+    \end{minted}
+    对应于  $UnitTypes::Zerg\_Evolution\_Chamber$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：750
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：75 矿，0 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：40
+        \item \textbf{摧毁得分}：120
+        \item \textbf{单位大小}：77x53 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族孵化场（Zerg Hatchery）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Extractor(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Extractor {Enum::Zerg_Extractor}
+    \end{minted}
+    虫族气体采集建筑
+    \\必须建造在瓦斯喷口（Vespene Geyser）上。
+    \begin{note}
+        当这种建筑在瓦斯喷口（Vespene Geyser）上建造时，瓦斯喷口的单位类型会被替换为这种类型。当它被摧毁时，这种类型会被瓦斯喷口的类型替换回去。
+    \end{note}
+    \begin{refer}
+        $Race::getRefinery, UnitTypes::Resource\_Vespene\_Geyser$
+    \end{refer}
+    对应于  $UnitTypes::Zerg\_Extractor$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：750
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：50 矿，0 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：25
+        \item \textbf{摧毁得分}：75
+        \item \textbf{单位大小}：128x64 像素；4x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 资源容器（ResourceContainer）
+                \item 炼气建筑（Refinery）
+                \item 建筑单位（Building）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Greater\_Spire(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Greater_Spire {Enum::Zerg_Greater_Spire}
+    \end{minted}
+    对应于  $UnitTypes::Zerg\_Greater\_Spire$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1000
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，150 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{建造得分}：200
+        \item \textbf{摧毁得分}：1350
+        \item \textbf{单位大小}：57x57 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族飞龙塔（Zerg Spire）、虫族蜂巢（Zerg Hive）
+        \item \textbf{建造单位}：虫族飞龙塔（Zerg Spire）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Hatchery(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Hatchery {Enum::Zerg_Hatchery}
+    \end{minted}
+    传播菌毯
+    \begin{refer}
+    Race::getCenter 
+    \end{refer}    
+    对应于  $UnitTypes::Zerg\_Hatchery$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1250
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：300 矿，0 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{提供补给}：2
+        \item \textbf{建造得分}：300
+        \item \textbf{摧毁得分}：900
+        \item \textbf{单位大小}：99x65 像素；4x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 资源建筑（ResourceDepot）
+                \item 建筑单位（Building）
+                \item 生成幼虫（ProducesLarva）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Hive(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Hive {Enum::Zerg_Hive}
+    \end{minted}
+    虫族蜂巢（Zerg Hive）。
+    对应于  $UnitTypes::Zerg\_Hive$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：2500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：200 矿，150 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{提供补给}：2
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：1500
+        \item \textbf{单位大小}：99x65 像素；4x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：352
+        \item \textbf{前置单位}：虫族巢穴（Zerg Lair）、虫族女王巢（Zerg Queens Nest）
+        \item \textbf{建造单位}：虫族巢穴（Zerg Lair）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 资源建筑（ResourceDepot）
+                \item 建筑单位（Building）
+                \item 生成幼虫（ProducesLarva）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Hydralisk\_Den(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Hydralisk_Den {Enum::Zerg_Hydralisk_Den}
+    \end{minted}
+    虫族刺蛇巢（Zerg Hydralisk Den）。
+    对应于  $UnitTypes::Zerg\_Hydralisk\_Den$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：850
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，50 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：300
+        \item \textbf{单位大小}：81x57 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族孵化池（Zerg Spawning Pool）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Infested\_Command\_Center(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Infested_Command_Center {Enum::Zerg_Infested_Command_Center}
+    \end{minted}
+    \begin{note}
+        可以在菌毯和非菌毯上着陆。
+    \end{note}
+    对应于  $UnitTypes::Zerg\_Infested\_Command\_Center$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{建造得分}：300
+        \item \textbf{摧毁得分}：900
+        \item \textbf{最高移动速度}：1
+        \item \textbf{加速度}：33
+        \item \textbf{停止距离}：2763
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：117x83 像素；4x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 飞行建筑（FlyingBuilding）
+                \item 建筑单位（Building）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Lair(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Lair {Enum::Zerg_Lair}
+    \end{minted}
+    虫族巢穴（Zerg Lair）。
+    对应于  $UnitTypes::Zerg\_Lair$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1800
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：150 矿，100 气，0 人口
+        \item \textbf{建造时间}：1500 帧
+        \item \textbf{提供补给}：2
+        \item \textbf{建造得分}：100
+        \item \textbf{摧毁得分}：1200
+        \item \textbf{单位大小}：99x65 像素；4x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{前置单位}：虫族孵化场（Zerg Hatchery）、虫族孵化池（Zerg Spawning Pool）
+        \item \textbf{建造单位}：虫族孵化场（Zerg Hatchery）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 资源建筑（ResourceDepot）
+                \item 建筑单位（Building）
+                \item 生成幼虫（ProducesLarva）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Nydus\_Canal(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Nydus_Canal {Enum::Zerg_Nydus_Canal}
+    \end{minted}
+    用于将虫族地面单位从一个虫族传送通道传送到另一个。
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：250
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：150 矿，0 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{建造得分}：75
+        \item \textbf{摧毁得分}：225
+        \item \textbf{单位大小}：64x64 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族蜂巢（Zerg Hive）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+    对应于  $UnitTypes::Zerg\_Nydus\_Canal$ 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Queens\_Nest(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Queens_Nest {Enum::Zerg_Queens_Nest}
+    \end{minted}
+    虫族女王巢（Zerg Queens Nest）。
+    对应于  $UnitTypes::Zerg\_Queens\_Nest$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：850
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：150 矿，100 气，0 人口
+        \item \textbf{建造时间}：900 帧
+        \item \textbf{建造得分}：175
+        \item \textbf{摧毁得分}：525
+        \item \textbf{单位大小}：71x57 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族巢穴（Zerg Lair）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Spawning\_Pool(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Spawning_Pool {Enum::Zerg_Spawning_Pool}
+    \end{minted}
+    虫族孵化池（Zerg Spawning Pool）。
+    对应于  $UnitTypes::Zerg\_Spawning\_Pool$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：750
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：200 矿，0 气，0 人口
+        \item \textbf{建造时间}：1200 帧
+        \item \textbf{建造得分}：75
+        \item \textbf{摧毁得分}：225
+        \item \textbf{单位大小}：77x47 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族孵化场（Zerg Hatchery）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Spire(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Spire {Enum::Zerg_Spire}
+    \end{minted}
+    虫族飞龙塔（Zerg Spire）。
+    对应于  $UnitTypes::Zerg\_Spire$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：600
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：200 矿，150 气，0 人口
+        \item \textbf{建造时间}：1800 帧
+        \item \textbf{建造得分}：250
+        \item \textbf{摧毁得分}：750
+        \item \textbf{单位大小}：57x57 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族巢穴（Zerg Lair）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Spore\_Colony(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Spore_Colony {Enum::Zerg_Spore_Colony}
+    \end{minted}
+    虫族孢子菌落（Zerg Spore Colony），用于防御空中单位。
+    对应于  $UnitTypes::Zerg\_Spore\_Colony$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：400
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：50 矿，0 气，0 人口
+        \item \textbf{建造时间}：300 帧
+        \item \textbf{建造得分}：25
+        \item \textbf{摧毁得分}：195
+        \item \textbf{空中武器}：追踪孢子（Seeker Spores）
+        \item \textbf{单位大小}：48x48 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{前置单位}：虫族进化实验室（Zerg Evolution Chamber）、虫族菌毯殖民地（Zerg Creep Colony）
+        \item \textbf{建造单位}：虫族菌毯殖民地（Zerg Creep Colony）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Sunken\_Colony(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Sunken_Colony {Enum::Zerg_Sunken_Colony}
+    \end{minted}
+    虫族地毯菌落（Zerg Sunken Colony），用于防御地面单位。
+    对应于  $UnitTypes::Zerg\_Sunken\_Colony$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：300
+        \item \textbf{护甲}：2
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：50 矿，0 气，0 人口
+        \item \textbf{建造时间}：300 帧
+        \item \textbf{建造得分}：40
+        \item \textbf{摧毁得分}：240
+        \item \textbf{地面武器}：地下触须（Subterranean Tentacle）
+        \item \textbf{单位大小}：48x48 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{前置单位}：虫族孵化池（Zerg Spawning Pool）、虫族菌毯殖民地（Zerg Creep Colony）
+        \item \textbf{建造单位}：虫族菌毯殖民地（Zerg Creep Colony）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Zerg\_Ultralisk\_Cavern(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Zerg_Ultralisk_Cavern {Enum::Zerg_Ultralisk_Cavern}
+    \end{minted}
+    虫族超兽洞穴（Zerg Ultralisk Cavern）。
+    对应于  $UnitTypes::Zerg\_Ultralisk\_Cavern$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：600
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：150 矿，200 气，0 人口
+        \item \textbf{建造时间}：1200 帧
+        \item \textbf{建造得分}：275
+        \item \textbf{摧毁得分}：825
+        \item \textbf{单位大小}：73x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{前置单位}：虫族工蜂（Zerg Drone）、虫族蜂巢（Zerg Hive）
+        \item \textbf{建造单位}：虫族工蜂（Zerg Drone）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+        \end{itemize}
+    \end{tcolorbox}
+
+\subsubsection{变量(虫族特殊建筑)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Cerebrate(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Cerebrate {Enum::Special_Cerebrate}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Cerebrate$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：0 帧
+        \item \textbf{摧毁得分}：2500
+        \item \textbf{单位大小}：73x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Cerebrate\_Daggoth(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Cerebrate_Daggoth {Enum::Special_Cerebrate_Daggoth}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Cerebrate\_Daggoth$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：1500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：0 帧
+        \item \textbf{摧毁得分}：2500
+        \item \textbf{单位大小}：73x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Mature\_Chrysalis(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Mature_Chrysalis {Enum::Special_Mature_Chrysalis}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Mature\_Chrysalis$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：250
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：0 帧
+        \item \textbf{摧毁得分}：5000
+        \item \textbf{单位大小}：64x64 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Overmind(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Overmind {Enum::Special_Overmind}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Overmind$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：2500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10000
+        \item \textbf{单位大小}：160x73 像素；5x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Overmind\_Cocoon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Overmind_Cocoon {Enum::Special_Overmind_Cocoon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Overmind\_Cocoon$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：2500
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1000 矿，500 气，0 人口
+        \item \textbf{建造时间}：2400 帧
+        \item \textbf{摧毁得分}：4000
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Overmind\_With\_Shell(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Overmind_With_Shell {Enum::Special_Overmind_With_Shell}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Overmind\_With\_Shell$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：5000
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10000
+        \item \textbf{单位大小}：160x73 像素；5x3 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 探测器（Detector）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+                \item 需要菌毯（RequiresCreep）
+                \item 自愈（RegeneratesHP）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(中立生物)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Bengalaas(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Bengalaas {Enum::Critter_Bengalaas}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Bengalaas$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Kakaru(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Kakaru {Enum::Critter_Kakaru}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Kakaru$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：5
+        \item \textbf{加速度}：16
+        \item \textbf{停止距离}：51200
+        \item \textbf{转弯半径}：14
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Ragnasaur(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Ragnasaur {Enum::Critter_Ragnasaur}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Ragnasaur$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Rhynadon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Rhynadon {Enum::Critter_Rhynadon}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Rhynadon$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Scantid(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Scantid {Enum::Critter_Scantid}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Scantid$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Critter\_Ursadon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Critter_Ursadon {Enum::Critter_Ursadon}
+    \end{minted}
+    对应于  $UnitTypes::Critter\_Ursadon$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：60
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{最高移动速度}：4
+        \item \textbf{加速度}：1
+        \item \textbf{停止距离}：1
+        \item \textbf{转弯半径}：27
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：小型（Small）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 生物单位（Organic）
+                \item 中立单位（Neutral）
+                \item 小动物（Critter）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(资源)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Resource\_Mineral\_Field(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Resource_Mineral_Field {Enum::Resource_Mineral_Field}
+    \end{minted}
+    对应于  $UnitTypes::Resource\_Mineral\_Field$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{建造得分}：10
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：64x32 像素；2x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 资源容器（ResourceContainer）
+                \item 建筑单位（Building）
+                \item 中立单位（Neutral）
+                \item 特殊建筑（SpecialBuilding）
+                \item 矿石场地（MineralField）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Resource\_Mineral\_Field\_Type\_2(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Resource_Mineral_Field_Type_2 {Enum::Resource_Mineral_Field_Type_2}
+    \end{minted}
+    对应于  $UnitTypes::Resource\_Mineral\_Field\_Type\_2$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{建造得分}：10
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：64x32 像素；2x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 资源容器（ResourceContainer）
+                \item 建筑单位（Building）
+                \item 中立单位（Neutral）
+                \item 特殊建筑（SpecialBuilding）
+                \item 矿石场地（MineralField）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Resource\_Mineral\_Field\_Type\_3(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Resource_Mineral_Field_Type_3 {Enum::Resource_Mineral_Field_Type_3}
+    \end{minted}
+    对应于  $UnitTypes::Resource\_Mineral\_Field\_Type\_3$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{建造得分}：10
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：64x32 像素；2x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 资源容器（ResourceContainer）
+                \item 建筑单位（Building）
+                \item 中立单位（Neutral）
+                \item 特殊建筑（SpecialBuilding）
+                \item 矿石场地（MineralField）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Resource\_Vespene\_Geyser(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Resource_Vespene_Geyser {Enum::Resource_Vespene_Geyser}
+    \end{minted}
+    对应于  $UnitTypes::Resource\_Vespene\_Geyser$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{建造得分}：10
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：128x64 像素；4x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 资源容器（ResourceContainer）
+                \item 建筑单位（Building）
+                \item 中立单位（Neutral）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(技能)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Spell\_Dark\_Swarm(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Spell_Dark_Swarm {Enum::Spell_Dark_Swarm}
+    \end{minted}
+    对应于  $UnitTypes::Spell\_Dark\_Swarm$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：250 矿，200 气，0 人口
+        \item \textbf{建造时间}：2400 帧
+        \item \textbf{单位大小}：160x160 像素；5x5 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 中立单位（Neutral）
+                \item 技能单位（Spell）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Spell\_Disruption\_Web(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Spell_Disruption_Web {Enum::Spell_Disruption_Web}
+    \end{minted}
+    对应于  $UnitTypes::Spell\_Disruption\_Web$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：250 矿，250 气，0 人口
+        \item \textbf{建造时间}：2400 帧
+        \item \textbf{单位大小}：120x80 像素；4x3 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 中立单位（Neutral）
+                \item 技能单位（Spell）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Spell\_Scanner\_Sweep(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Spell_Scanner_Sweep {Enum::Spell_Scanner_Sweep}
+    \end{minted}
+    对应于  $UnitTypes::Spell\_Scanner\_Sweep$ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：0
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：27x31 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+                \item 探测器（Detector）
+                \item 技能单位（Spell）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(航标)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Protoss\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Protoss_Beacon {Enum::Special_Protoss_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Protoss\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：神族（Protoss）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，100 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 信标（Beacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Protoss\_Flag\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Protoss_Flag_Beacon {Enum::Special_Protoss_Flag_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Protoss\_Flag\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：神族（Protoss）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，100 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 标志信标（FlagBeacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Terran\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Terran_Beacon {Enum::Special_Terran_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Terran\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：50 矿，50 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 信标（Beacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Terran\_Flag\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Terran_Flag_Beacon {Enum::Special_Terran_Flag_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Terran\_Flag\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：人族（Terran）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：50 矿，50 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 标志信标（FlagBeacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Zerg\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Zerg_Beacon {Enum::Special_Zerg_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Zerg\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：250 矿，0 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 信标（Beacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Zerg\_Flag\_Beacon(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Zerg_Flag_Beacon {Enum::Special_Zerg_Flag_Beacon}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Zerg\_Flag\_Beacon$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：250 矿，0 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：96x64 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 建筑单位（Building）
+                \item 标志信标（FlagBeacon）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(增益)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Data\_Disk(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Data_Disk {Enum::Powerup_Data_Disk}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Data\_Disk$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Flag(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Flag {Enum::Powerup_Flag}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Flag$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Khalis\_Crystal(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Khalis_Crystal {Enum::Powerup_Khalis_Crystal}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Khalis\_Crystal$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：10000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Khaydarin\_Crystal(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Khaydarin_Crystal {Enum::Powerup_Khaydarin_Crystal}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Khaydarin\_Crystal$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Mineral\_Cluster\_Type\_1(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Mineral_Cluster_Type_1 {Enum::Powerup_Mineral_Cluster_Type_1}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Mineral\_Cluster\_Type\_1$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Mineral\_Cluster\_Type\_2(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Mineral_Cluster_Type_2 {Enum::Powerup_Mineral_Cluster_Type_2}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Mineral\_Cluster\_Type\_2$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Protoss\_Gas\_Orb\_Type\_1(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Protoss_Gas_Orb_Type_1 {Enum::Powerup_Protoss_Gas_Orb_Type_1}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Protoss\_Gas\_Orb\_Type\_1$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Protoss\_Gas\_Orb\_Type\_2(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Protoss_Gas_Orb_Type_2 {Enum::Powerup_Protoss_Gas_Orb_Type_2}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Protoss\_Gas\_Orb\_Type\_2$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Psi\_Emitter(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Psi_Emitter {Enum::Powerup_Psi_Emitter}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Psi\_Emitter$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Terran\_Gas\_Tank\_Type\_1(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Terran_Gas_Tank_Type_1 {Enum::Powerup_Terran_Gas_Tank_Type_1}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Terran\_Gas\_Tank\_Type\_1$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Terran\_Gas\_Tank\_Type\_2(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Terran_Gas_Tank_Type_2 {Enum::Powerup_Terran_Gas_Tank_Type_2}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Terran\_Gas\_Tank\_Type\_2$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Uraj\_Crystal(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Uraj_Crystal {Enum::Powerup_Uraj_Crystal}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Uraj\_Crystal$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：10000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Young\_Chrysalis(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Young_Chrysalis {Enum::Powerup_Young_Chrysalis}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Young\_Chrysalis$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Zerg\_Gas\_Sac\_Type\_1(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Zerg_Gas_Sac_Type_1 {Enum::Powerup_Zerg_Gas_Sac_Type_1}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Zerg\_Gas\_Sac\_Type\_1$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Powerup\_Zerg\_Gas\_Sac\_Type\_2(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Powerup_Zerg_Gas_Sac_Type_2 {Enum::Powerup_Zerg_Gas_Sac_Type_2}
+    \end{minted}
+    对应于  $UnitTypes::Powerup\_Zerg\_Gas\_Sac\_Type\_2$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：160
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 功能道具（Powerup）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(陷阱)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Floor\_Gun\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Floor_Gun_Trap {Enum::Special_Floor_Gun_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Floor\_Gun\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{转弯半径}：127
+        \item \textbf{地面武器}：双联自动炮 地板陷阱（Twin Autocannons Floor Trap）
+        \item \textbf{单位大小}：64x64 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：192
+        \item \textbf{升级}：人族载具武器（Terran Vehicle Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Floor\_Missile\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Floor_Missile_Trap {Enum::Special_Floor_Missile_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Floor\_Missile\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{转弯半径}：20
+        \item \textbf{地面武器}：地狱火导弹包 地板陷阱（Hellfire Missile Pack Floor Trap）
+        \item \textbf{单位大小}：64x64 像素；2x2 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：192
+        \item \textbf{升级}：人族载具武器（Terran Vehicle Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Right\_Wall\_Flame\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Right_Wall_Flame_Trap {Enum::Special_Right_Wall_Flame_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Right\_Wall\_Flame\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{地面武器}：火焰喷射器 墙壁陷阱（Flame Thrower Wall Trap）
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：64
+        \item \textbf{视野范围}：96
+        \item \textbf{升级}：人族步兵武器（Terran Infantry Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Right\_Wall\_Missile\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Right_Wall_Missile_Trap {Enum::Special_Right_Wall_Missile_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Right\_Wall\_Missile\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{地面武器}：地狱火导弹包 墙壁陷阱（Hellfire Missile Pack Wall Trap）
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：192
+        \item \textbf{升级}：人族载具武器（Terran Vehicle Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Wall\_Flame\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Wall_Flame_Trap {Enum::Special_Wall_Flame_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Wall\_Flame\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{地面武器}：火焰喷射器 墙壁陷阱（Flame Thrower Wall Trap）
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：64
+        \item \textbf{视野范围}：96
+        \item \textbf{升级}：人族步兵武器（Terran Infantry Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Wall\_Missile\_Trap(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Wall_Missile_Trap {Enum::Special_Wall_Missile_Trap}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Wall\_Missile\_Trap$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：50
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：100
+        \item \textbf{地面武器}：地狱火导弹包 墙壁陷阱（Hellfire Missile Pack Wall Trap）
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：大型（Large）
+        \item \textbf{搜索范围}：160
+        \item \textbf{视野范围}：192
+        \item \textbf{升级}：人族载具武器（Terran Vehicle Weapons）
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 探测器（Detector）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(门)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Pit\_Door(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Pit_Door {Enum::Special_Pit_Door}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Pit\_Door$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：70x38 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：32
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Right\_Pit\_Door(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Right_Pit_Door {Enum::Special_Right_Pit_Door}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Right\_Pit\_Door$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：70x38 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：32
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Right\_Upper\_Level\_Door(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Right_Upper_Level_Door {Enum::Special_Right_Upper_Level_Door}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Right\_Upper\_Level\_Door$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：70x38 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：32
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Upper\_Level\_Door(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Upper_Level_Door {Enum::Special_Upper_Level_Door}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Upper\_Level\_Door$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：70x38 像素；3x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：32
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\subsubsection{变量(特殊)}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Cargo\_Ship(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Cargo_Ship {Enum::Special_Cargo_Ship}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Cargo\_Ship$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：125
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，100 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{搜索范围}：256
+        \item \textbf{视野范围}：256
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 无
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Floor\_Hatch(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Floor_Hatch {Enum::Special_Floor_Hatch}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Floor\_Hatch$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：100000
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{摧毁得分}：10
+        \item \textbf{单位大小}：256x128 像素；8x4 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 不可摧毁（Invincible）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Independant\_Starport(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Independant_Starport {Enum::Special_Independant_Starport}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Independant\_Starport$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：1 矿，1 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{建造得分}：10
+        \item \textbf{摧毁得分}：10
+        \item \textbf{地面武器}：独立激光炮（Independant Laser Battery）
+        \item \textbf{单位大小}：64x64 像素；2x2 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：288
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 机械单位（Mechanical）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Map\_Revealer(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Map_Revealer {Enum::Special_Map_Revealer}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Map\_Revealer$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：1
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：1 帧
+        \item \textbf{单位大小}：27x31 像素；1x1 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：320
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 飞行单位（Flyer）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Mercenary\_Gunship(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Mercenary_Gunship {Enum::Special_Mercenary_Gunship}
+    \end{minted}
+    对应于  $UnitTypes::Special\_Mercenary\_Gunship$ 
+    \begin{itemize}
+        \item \textbf{种族}：虫族（Zerg）
+        \item \textbf{生命值}：125
+        \item \textbf{护甲}：1
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：100 矿，100 气，0 人口
+        \item \textbf{建造时间}：600 帧
+        \item \textbf{单位大小}：32x32 像素；1x1 格
+        \item \textbf{单位尺寸类型}：中型（Medium）
+        \item \textbf{搜索范围}：128
+        \item \textbf{视野范围}：224
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 无
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white, colframe=black!60!white, title=Special\_Start\_Location(), arc=0mm]
+    \begin{minted}[frame=none]{cpp}
+BWAPI::UnitTypes::Special_Start_Location {Enum::Special_Start_Location}
+    \end{minted}
+    \textbf{描述：}一种特殊单位用于确认玩家初始位置
+  \\该单位在游戏开始时会被移除，并被替换为该种族的资源仓库。
+  \\在使用BWAPI时，一个特殊的用例是将此值传递给 Game::canBuildHere。 
+    \begin{refer}
+        Game::canBuildHere
+    \end{refer} 
+    对应于  $UnitTypes::Special\_Start\_Location$ 
+    \begin{itemize}
+        \item \textbf{种族}：无（None）
+        \item \textbf{生命值}：800
+        \item \textbf{护甲}：0
+        \item \textbf{护甲升级}：升级 60（Upgrade 60）
+        \item \textbf{成本}：0 矿，0 气，0 人口
+        \item \textbf{建造时间}：0 帧
+        \item \textbf{单位大小}：97x65 像素；4x3 格
+        \item \textbf{单位尺寸类型}：独立（Independent）
+        \item \textbf{搜索范围}：0
+        \item \textbf{视野范围}：32
+        \item \textbf{属性}：
+            \begin{itemize}
+                \item 资源建筑（ResourceDepot）
+                \item 建筑单位（Building）
+                \item 特殊建筑（SpecialBuilding）
+            \end{itemize}
+    \end{itemize}
+\end{tcolorbox}
